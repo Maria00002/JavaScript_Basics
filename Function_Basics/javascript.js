@@ -169,15 +169,66 @@ console.log(newString1);
 // alert(doNothing() === undefined);
 
 // Naming a function
-function showPrimes(n){
-    nextPrime: for (let i =2; i<n;i++){
-        for (let j =2;j<i;j++){
-            if (i%j== 0) continue nextPrime;
-        }
-        alert(i); //a prime
-    } 
+// function showPrimes(n){
+//     nextPrime: for (let i =2; i<n;i++){
+//         for (let j =2;j<i;j++){
+//             if (i%j== 0) continue nextPrime;
+//         }
+//         alert(i); //a prime
+//     } 
+// }
+
+
+//Rewrite the function using '?' or '||'
+// function checkAge(age){
+//     return (age>18) ? true: confirm('Did parents allow you?');
+// }
+
+// function checkAge(age){
+//     return (age>18)|| confirm('Did parents allow you?');
+// }
+
+//Function min(a,b)
+// function min(a,b){
+//     if (a<=b){
+//         return a;
+//     }
+//     else {
+//         return b;
+//     }
+// }
+// alert(min(2,5));
+// alert(min(3,-1));
+// alert(min(1,1));
+
+
+//Function pow(x,n)
+function pow(x,n){
+    let answer = x;
+    while (n>=1){
+        answer *= x;
+        n--;
+    }
+    return answer;
 }
 
+let x = prompt('x?','');
+let n = prompt('n?','');
+
+if (n>0){
+    alert(pow(x,n));
+}
+else if (n==0){
+    alert(1);
+}
+else {
+    alert("n should be positive. please try again.");
+}
+
+
+// alert(pow(3,2));
+// alert(pow(3,3));
+// alert(pow(1,100));
 
 
 
