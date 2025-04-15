@@ -155,19 +155,28 @@ console.log(newString1);
 
 // showMovie(age);
 
-function doNothing(){
-   //empty 
+// function doNothing(){
+//    //empty 
+// }
+
+// alert(doNothing() === undefined);
+
+
+// function doNothing(){
+//     return;
+// }
+
+// alert(doNothing() === undefined);
+
+// Naming a function
+function showPrimes(n){
+    nextPrime: for (let i =2; i<n;i++){
+        for (let j =2;j<i;j++){
+            if (i%j== 0) continue nextPrime;
+        }
+        alert(i); //a prime
+    } 
 }
-
-alert(doNothing() === undefined);
-
-
-function doNothing(){
-    return;
-}
-
-alert(doNothing() === undefined);
-
 
 
 
