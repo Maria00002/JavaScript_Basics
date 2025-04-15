@@ -38,6 +38,12 @@
             return num;
         }
 
+        function square_root(num){
+            if (num<0) return undefined;
+            if (num===0) return 0;
+            return Math.sqrt(num);
+        }
+
         input.addEventListener("change",() => {
             const num = parseFloat(input.value);
             if (isNaN(num)){
@@ -48,7 +54,7 @@
                 para.textContent += `${num} cubed is ${cubed(num)}. `;
                 para.textContent += `${num} factorial is ${factorial(num)}. `;
                 // my added code
-                // para.textContent += `${num} `;
+                para.textContent += `${num} square root is ${square_root(num)}. `;
             }
         }
     )
