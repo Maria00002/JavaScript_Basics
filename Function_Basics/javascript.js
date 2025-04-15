@@ -18,3 +18,112 @@ const originals = [1,2,3];
 const doubled = originals.map(item => item *2);
 console.log(doubled);
 
+// Function Return Values
+const myText1 = "The weather is cold";
+const newString1 = myText1.replace("cold","warm");
+console.log(newString1);
+
+// function showMessage(){
+//     alert('Hello everyone!');
+// }
+
+// showMessage();
+// showMessage();
+
+// function showMessage(){
+//     let message = "Hello, I'm JavaScript!"; //local variable
+//     alert(message);
+// }
+
+// showMessage(); //Hello, I'm JavaScript
+// alert(message);
+
+// let userName = "John";
+
+// function showMessage(){
+//     let message = "Hello, " + userName ; 
+//     alert(message);
+// }
+
+// showMessage(); //Hello, John
+
+// let userName = "John";
+
+// function showMessage(){
+//     userName = "Bob"; // change dthe outer variable
+//     let message = "Hello, " + userName ; 
+//     alert(message);
+// }
+// alert(userName); //John
+// showMessage(); //Hello, BOb
+// alert(userName); //Bob
+
+
+// let userName = "John";
+
+// function showMessage(){
+//     let userName = "Bob"; // declare a local variable
+//     let message = "Hello, " + userName ; 
+//     alert(message);
+// }
+// alert(userName); //John
+// showMessage(); //Hello, BOb
+// alert(userName); //JOhn
+
+// function showMessage(from, text){
+//     alert(from+": " +text);
+// }
+
+// showMessage('Ann','Hello!');
+// showMessage('Ann',`What's up?`);
+
+// function showMessage(from, text){
+//     from = '*' + from + '*';
+//     alert(from+": " +text);
+// }
+// let from = "Ann";
+// showMessage(from,'Hello!');
+// alert(from);
+
+// showMessage("Ann");
+
+// function showMessage(from, text = "no text given"){
+//     alert(from + ": " + text);
+// }
+
+// showMessage("Ann");
+// showMessage("Ann", undefined);
+
+// function showMessage(text) {
+//     if (text === undefined){
+//         text = 'empty message';
+//     }
+
+//     alert(text);
+// }
+
+// showMessage();
+
+// function showMessage(text){
+//     text = text||"empty";
+//     alert(text);
+// }
+
+// showMessage();
+
+// function showCount(count){
+//     // if count if undefined or null, show "unknown"
+//     alert(count ?? "unknown");
+// }
+
+// showCount(0); //0
+// showCount(null); //unknown
+// showCount(); //unknown
+
+//Returning a value
+function sum(a,b){
+    return a+b;
+}
+
+let result = sum(1,2);
+alert(result); //3
