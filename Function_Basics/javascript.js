@@ -203,32 +203,64 @@ console.log(newString1);
 
 
 //Function pow(x,n)
-function pow(x,n){
-    let answer = x;
-    while (n>=1){
-        answer *= x;
-        n--;
-    }
-    return answer;
-}
+// function pow(x,n){
+//     let answer = x;
+//     while (n>=1){
+//         answer *= x;
+//         n--;
+//     }
+//     return answer;
+// }
 
-let x = prompt('x?','');
-let n = prompt('n?','');
+// let x = prompt('x?','');
+// let n = prompt('n?','');
 
-if (n>0){
-    alert(pow(x,n));
-}
-else if (n==0){
-    alert(1);
-}
-else {
-    alert("n should be positive. please try again.");
-}
+// if (n>0){
+//     alert(pow(x,n));
+// }
+// else if (n==0){
+//     alert(1);
+// }
+// else {
+//     alert("n should be positive. please try again.");
+// }
 
 
 // alert(pow(3,2));
 // alert(pow(3,3));
 // alert(pow(1,100));
 
+// Function expressions
+// function sayHi(){
+//     alert("Hello");
+// }
+
+// // alert(sayHi);
+// // Function is a value
+// let func = sayHi;
+// func();
+// sayHi();
+
+// let sayHi = function(){
+//     alert("Hello");
+// };
+
+// let func = sayHi;
+
+// Callback functions
+function ask(question, yes, no){
+    if(confirm(question)) yes()
+    else no();
+}
+
+function showOk(){
+    alert("You agreed.");
+}
+
+function showCancel(){
+    alert("You canceled the execution.");
+}
+
+ask("Do you agree?", showOk, showCancel);
 
 
