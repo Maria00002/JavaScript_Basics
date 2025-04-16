@@ -373,13 +373,27 @@ console.log(newString1);
 //     function() {alert("You canceled the execution.");}
 // );
 
-function ask (question, yes, no){
-    if (confirm(question)) yes();
-    else no();
+// function ask (question, yes, no){
+//     if (confirm(question)) yes();
+//     else no();
+// }
+
+// ask (
+//     "Do you agree?",
+//     () => alert("You agreed."),
+//     () => alert("YOu canceled the execution.")
+// );
+
+
+// JavaScript call stack example
+function add(a,b){
+    return a+b;
 }
 
-ask (
-    "Do you agree?",
-    () => alert("You agreed."),
-    () => alert("YOu canceled the execution.")
-);
+function average(a,b){
+    return add(a,b)/2;
+}
+
+let x = average(10,20);
+
+
