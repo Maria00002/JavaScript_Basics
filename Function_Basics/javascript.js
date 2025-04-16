@@ -248,28 +248,77 @@ console.log(newString1);
 // let func = sayHi;
 
 // Callback functions
-function ask(question, yes, no){
-    if(confirm(question)) yes()
-    else no();
-}
+// function ask(question, yes, no){
+//     if(confirm(question)) yes()
+//     else no();
+// }
 
-function showOk(){
-    alert("You agreed.");
-}
+// function showOk(){
+//     alert("You agreed.");
+// }
 
-function showCancel(){
-    alert("You canceled the execution.");
-}
+// function showCancel(){
+//     alert("You canceled the execution.");
+// }
 
-ask("Do you agree?", showOk, showCancel);
+// ask("Do you agree?", showOk, showCancel);
 
-function ask(question, yes, no){
-    if (confirm(question))yes()
-    else no();
-}
+// function ask(question, yes, no){
+//     if (confirm(question))yes()
+//     else no();
+// }
 
-ask ("Do you agree?",
-    function(){alert("You agreed.");},
-    function(){alert("You canceled the execution.");}
-);
+// ask ("Do you agree?",
+//     function(){alert("You agreed.");},
+//     function(){alert("You canceled the execution.");}
+// );
 
+//Function Expression vs. Function Declaration
+//Function Declaration: a function, declared as a separate statement. in the main code flow
+// Function Declaration
+// function sum(a,b){
+//     return a+b;
+// }
+
+// Function Expression: a function, created inside an expression or inside syntax construct. 
+// let sum = function(a,b){
+//     return a+b;
+// };
+
+// A function Expression is created when the execution reaches it and is usable only from that moment
+// let age = prompt("What is your age?", 18);
+// if (age<18){
+//     function welcome(){
+//         alert("Hello!");
+//     }
+// }
+// else {
+//     function welcome(){
+//         alert("Greetings!");
+//     }
+// }
+
+// welcome();
+
+// let age = prompt("What is your age?", 18);
+// let welcome;
+
+// if (age<18){
+//     welcome = function(){
+//         alert("Hello!");
+//     }
+// }
+// else {
+//     welcome = function(){
+//         alert("Greetings!");
+//     }
+// }
+
+// welcome();
+
+let age = prompt("What is your age?",18);
+let welcome = (age<18)?
+    function(){alert("Hello!");}:
+    function(){alert("Greetings!");};
+
+console.log(welcome());
