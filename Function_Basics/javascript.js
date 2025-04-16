@@ -316,9 +316,70 @@ console.log(newString1);
 
 // welcome();
 
-let age = prompt("What is your age?",18);
-let welcome = (age<18)?
-    function(){alert("Hello!");}:
-    function(){alert("Greetings!");};
+// let age = prompt("What is your age?",18);
+// let welcome = (age<18)?
+//     function(){alert("Hello!");}:
+//     function(){alert("Greetings!");};
 
-console.log(welcome());
+// welcome();
+
+// Arrow functions, the basics
+// let func = (arg1, arg2, arg3, arg4...) => expression;
+// This creates a function func that accepts arguments arg1..argN, then 
+// evaluates the expression on the right side with their use and returns
+// its result. 
+
+// let func= function(arg1, arg2,..., argN){
+//     return expression;
+// };
+
+// let sum = (a,b) => a+b;
+// The arrow function is a shorter form of 
+// let sum = function(a,b) {
+//     return a+b;
+// }
+
+// alert(sum(1,2));
+
+// let double = n => n*2;
+// alert(double(3));
+
+// let sayHi = () => alert("Hello!");
+// sayHi();
+
+// let age = prompt("What is your age?", 18);
+
+// let welcome =(age <18)?
+//     () => alert('Hello!'):
+//     () => alert("Greetings!");
+
+// welcome();
+
+// let sum = (a,b) =>{
+//     let result = a+b;
+//     return result;
+// }
+
+// alert(sum(1,2));
+
+// let ask = (question, yes, no) =>{
+//     if (confirm(question)) yes();
+//     else no();
+// }
+
+// ask(
+//     "Do you agree?", 
+//     function() {alert("You agreed.");},
+//     function() {alert("You canceled the execution.");}
+// );
+
+function ask (question, yes, no){
+    if (confirm(question)) yes();
+    else no();
+}
+
+ask (
+    "Do you agree?",
+    () => alert("You agreed."),
+    () => alert("YOu canceled the execution.")
+);
