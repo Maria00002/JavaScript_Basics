@@ -30,4 +30,15 @@ for (let i=1; i<=answer; i++){
    
 }
 
+// Summary of "How to think like a programmer - lessons in problem solving"
+// 1.Understand
+// 2.Plan
+// 3.Divide
+// 4.Stuck?
+// 5.Practice
+// 6.Conclusion
+
+
+
+
 
