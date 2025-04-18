@@ -52,10 +52,19 @@
 // 4 Make use of the console.  
 
 // Errors vs. warnings
-// Errors will stop the 
-//
-//
+// Errors will stop the execution of the program 
+// Warnings are messages that provide you insight on potential problems
+// that may not necessarily crash you program at runtime
+// Warnings are typically shown in yellow, while errors are typically shown in red
 
+// Summary of ReferenceError from MDN Docs
+/* The ReferenceError object represents an error when a variable that 
+doesn't exist (or hasn't yet been initialized) in the current scope is 
+referenced.
+
+Constructor
+ReferenceError() creates a new ReferenceError object
+*/
 
 
 
