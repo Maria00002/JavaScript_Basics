@@ -39,6 +39,33 @@ for (let i=1; i<=answer; i++){
 // 6.Conclusion
 
 
+// Summary of the article "Pseudocode: What It Is and How to Write It" from Built IN
+// Pseudocode: What It Is and How to Write It
+// Pseudocode is a technique used to describe the distinct steps of an algorithm
+// that is easy to understand foor anyone. 
+
+// The Main Constructs of Pseudocode
+// SEQUENCE, CASE, WHILE, REPEAT-UNTIL, FOR, IF-THEN-ELSE
+// 1.Sequence: represents linear tasks sequentially performed one after the other
+// 2.While is a loop with a condition at its beginning
+// 3.Repeat-until is a loop with a condition at the bottom
+// 4.For is another way of looping
+// 5.If-then-else is a conditional statement changing the flow of the algorithm
+// 6.Case is the generalization form of If-Then-Else
+
+// // How to Write Pseudocode
+// 1 Always capitalize the initial word
+// 2 Make only one statement per line
+// 3 Indent to show hierarchy, improve readability and show nested constructs
+// 4 Always end multi-line sections using any of the END keywords
+// 5 Keep your statements programming language independent
+// 6 Use the naming domain of the problem
+// 7 Keep it simple, concise and readable
+
+
+
+
+
 
 
 
