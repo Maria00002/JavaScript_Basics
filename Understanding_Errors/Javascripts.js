@@ -76,6 +76,21 @@ Constructor
 SyntaxError() Creates a new SyntaxError object
 */
 
+/* TypeError
+The TypeError object represents an error when an operation could not be 
+performed, typically (but not exclusively) when a value is not of the 
+expected type. 
+
+A TypeError may be thrown when: 
+-   an operand or argument passed to a function is incomptaible with the 
+    type expected by that operator or function; or
+-   when attempting to modify a value that cannot be changed; or
+-   when attempting to use a value in an inappropriate way
+
+Constructor
+TypeError() creates a new TypeError object
+*/
+
 
 
 
