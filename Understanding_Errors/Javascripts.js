@@ -91,6 +91,18 @@ Constructor
 TypeError() creates a new TypeError object
 */
 
+// What went wrong? Toubleshooting JavaScript
+/*  
+Two main types of error 
+    Syntax errors: spelling errors in your code that actually cause the 
+    program not to run at all, or stop working part way through
+    Logic errors: the syntax is actually correct but the code is not 
+
+    Logic errors: the syntax is actually correct but the code is not 
+    what you intended it to be. 
+*/
+
+
 
 
 
