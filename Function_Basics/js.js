@@ -177,19 +177,72 @@
 // alert(doNothing() === undefined);
 
 // Functions == Comments
-function showPrimes(n){
-    nextPrime: for (let i = 2; i < n; i++) {
-        for (let j = 2; j < i; j++) {
-            if (i % j == 0) continue nextPrime;
-        }
+// function showPrimes(n){
+//     nextPrime: for (let i = 2; i < n; i++) {
+//         for (let j = 2; j < i; j++) {
+//             if (i % j == 0) continue nextPrime;
+//         }
 
-        alert(i);
-    }
+//         alert(i);
+//     }
+// }
+
+// showPrimes(4);
+
+// Function Declaration
+// function sayHi() {
+//     alert("Hello");
+// }
+
+// // Function Expression
+// let sayHi = function() {
+//     alert("Hello");
+// };
+
+// Function is a value
+// function sayHi() {
+//     alert("Hello");
+// }
+
+// let func = sayHi;
+// console.log(func);
+// sayHi();
+
+// let sayHi = function() {
+//     alert("Hello");
+// };
+
+// let func = sayHi;
+// console.log(func());
+
+// Callback functions
+// function ask (question, yes, no) {
+//     if (confirm(question)) yes()
+//     else no();
+// }
+
+// function showOk() {
+//     alert("You agreed.");
+// }
+
+// function showCancel() {
+//     alert("You canceled the execution.");
+// }
+// // The arguments showOk and showCancel of ask are called callback functions
+// // or just callbacks
+// ask("Do you agree?", showOk, showCancel);
+
+// FUnciton Expressions to write an equivalent, shorter funciton
+function ask(question, yes, no) {
+    if (confirm(question)) yes()
+    else no();
 }
 
-showPrimes(4);
-
-
+ask (
+    "Do you agree?",
+    function() {alert("You agreed.");},
+    function() {alert("You canceled the execution.");}
+);
 
 
 
