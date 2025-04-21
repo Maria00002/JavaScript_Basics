@@ -35,3 +35,6 @@ hello();
 // }
 
 // textBox.addEventListener("keydown", logKey);
+
+// Function scope and conflicts
+// the top-level outside all your functions is called the global scope
