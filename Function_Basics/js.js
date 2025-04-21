@@ -45,30 +45,154 @@
 // HOw to use the return values of existing functions
 // Adding return values to your own functions
 
-const myText = "The weather is cold.";
-const newString = myText.replace("cold","warm");
-console.log(newString);
+// const myText = "The weather is cold.";
+// const newString = myText.replace("cold","warm");
+// console.log(newString);
 
-// Using return values in your own functions
-// Active learning: A return value function
-function squared(num) {
-    return num *num;
+// // Using return values in your own functions
+// // Active learning: A return value function
+// function squared(num) {
+//     return num *num;
+// }
+
+// function cubed(num) {
+//     return num * num * num;
+// }
+
+
+// function factorial(num) {
+//     if (num < 0) return undefined;
+//     if (num === 0) return 1;
+//     let x = num - 1;
+//     while (x > 1) {
+//         num *= x;
+//         x--;
+//     } 
+//     return num;
+// }
+
+// console.log(factorial(-13));
+
+// Functions
+// Function Declaration
+// function showMessage() {
+//     let message = "Hello, I'm JavaScript!"; // local variable
+//     alert(message);
+// }
+
+
+// showMessage();
+// alert(message); // The variable is local to the function
+
+// Outer variables
+// A function can access an outer variable as well, for example
+// let userName = "John";
+
+// function showMessage() {
+//     let userName = "Bob";
+//     let message = "Hello, " + userName;
+//     alert(message);
+// }
+// alert(userName);
+// showMessage();
+// alert(userName);
+
+// function showMessage(from, text) {
+//     alert(from + ': ' + text);
+// }
+
+// showMessage('Ann', 'Hello!');
+// showMessage('Ann', "What's up?");
+
+// function showMessage(from, text = "no text given") {
+//     from = '*' + from + '*';
+//     alert(from + ': ' + text);
+// }
+// let from = "Ann";
+
+// showMessage(from, 'Hello!');
+// showMessage("Ann", undefined);
+
+// // Alternative default parameters
+// function showMessage(text) {
+//     if (text === undefined) {
+//         text = 'empty message';
+//     }
+
+//     alert(text);
+// }
+// showMessage();
+
+
+// function showMessage(text) {
+//     text = text || 'empty';
+//     alert(text);
+// }
+
+// function showCount(count) {
+//     alert(count??"unknown");
+// }
+
+// showCount(0);
+// showCount(null);
+// showCount();
+
+// function sum(a,b) {
+//     return a + b;
+// }
+
+// let result = sum(1,2);
+// alert(result);
+
+// function checkAge(age) {
+//     if (age >= 18) {
+//         return true;
+//     } else {
+//         return confirm('Do you have permission from your parents?');
+//     }
+// }
+
+
+// let age = prompt('How old are you?', 18);
+
+// if (checkAge(age)) {
+//     alert('Access granted');
+// } else {
+//     alert('Access denied');
+// }
+
+// function showMovie(age) {
+//     if (!checkAge(age)){
+//         return;
+//     }
+//     alert("Showing you the movie");
+// }
+
+// showMovie(age);
+
+// function doNothing() {
+//     return;
+// }
+
+// alert(doNothing() === undefined);
+
+// Functions == Comments
+function showPrimes(n){
+    nextPrime: for (let i = 2; i < n; i++) {
+        for (let j = 2; j < i; j++) {
+            if (i % j == 0) continue nextPrime;
+        }
+
+        alert(i);
+    }
 }
 
-function cubed(num) {
-    return num * num * num;
-}
+showPrimes(4);
 
 
-function factorial(num) {
-    if (num < 0) return undefined;
-    if (num === 0) return 1;
-    let x = num - 1;
-    while (x > 1) {
-        num *= x;
-        x--;
-    } 
-    return num;
-}
 
-console.log(factorial(-13));
+
+
+
+
+
