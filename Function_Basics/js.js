@@ -233,19 +233,55 @@
 // ask("Do you agree?", showOk, showCancel);
 
 // FUnciton Expressions to write an equivalent, shorter funciton
-function ask(question, yes, no) {
-    if (confirm(question)) yes()
-    else no();
+// function ask(question, yes, no) {
+//     if (confirm(question)) yes()
+//     else no();
+// }
+
+// ask (
+//     "Do you agree?",
+//     function() {alert("You agreed.");},
+//     function() {alert("You canceled the execution.");}
+// );
+
+
+// Function Expression vs Function Declaration
+// Function Declaraion: a function, declared as a separate statement
+// function sum(a, b) {
+//     return a + b;
+// }
+
+// Function expression: a function, created inside an expression 
+// or inside another syntax construct
+// let sum = function(a, b) {
+//     return a + b;
+// }
+
+// A Function Expression is created when the execution reaches it and is usable only from that moment
+// A Function Declaration can be called earlier than it is defined
+
+// sayHi("John");
+
+// let sayHi = function(name) {
+//     alert(`Hello, ${name}`);
+// }
+
+
+let age = prompt("What is your age?", 18);
+
+let welcome;
+
+if (age < 18) {
+    welcome = function() {
+        alert('Hello!');
+    };
+    
+} else {
+    welcome = function() {
+        alert("Greetings!");
+    };
 }
 
-ask (
-    "Do you agree?",
-    function() {alert("You agreed.");},
-    function() {alert("You canceled the execution.");}
-);
-
-
-
-
+welcome();
 
 
