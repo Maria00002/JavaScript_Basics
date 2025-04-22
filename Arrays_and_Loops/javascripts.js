@@ -80,6 +80,46 @@ function myFunction(currentValue) {
     console.log(currentValue);
 }
 
+// Adding Array Elements
+fruits.push("Lemon");
+console.log(fruits);
+
+fruits[fruits.length] = "passion fruit";
+console.log(fruits);
+
+fruits[10] = "Lemon";
+console.log(fruits); // Creates undefined "holes" in fruits
+
+// Associative Arrays
+// Arrays with named indexes are called associative arrays (or hashes)
+const personA = [];
+personA[0] = "John";
+personA[1] = "Doe";
+personA[2] = 46;
+console.log(personA.length);
+console.log(personA[0]);
+
+const personB = [];
+personB["firstName"] = "John";
+personB["lastName"] = "Doe";
+person["age"] = 46;
+console.log(personB.length);
+console.log(personB[0]);
+
+// The Difference Between Arrays and Objects
+// In JS, arrays use numbered indexes
+// In JS, objects use named indexes
+// Arrays are a special kind of objects, with numbered indexes
+
+// JavaScript new Array()
+// JS has a built-in array constructor new Array()
+// But don't use it because it might cause some errors
+
+// How to Recognize an Array
+isArray = Array.isArray(fruits);
+console.log(isArray);
+
+console.log(fruits instanceof Array);
 
 
 
