@@ -267,21 +267,27 @@
 // }
 
 
-let age = prompt("What is your age?", 18);
+// let age = prompt("What is your age?", 18);
 
-let welcome;
+// let welcome;
 
-if (age < 18) {
-    welcome = function() {
-        alert('Hello!');
-    };
+// if (age < 18) {
+//     welcome = function() {
+//         alert('Hello!');
+//     };
     
-} else {
-    welcome = function() {
-        alert("Greetings!");
-    };
-}
+// } else {
+//     welcome = function() {
+//         alert("Greetings!");
+//     };
+// }
 
-welcome();
+// welcome();
+
+// JavaScript Call Stack
+// The global execution context
+// Function execution contexts
+// The call stack works based on the last-in-first-out (LIFO) principle
+
 
 
