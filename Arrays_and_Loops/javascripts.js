@@ -253,131 +253,241 @@
 // console.log(fruitT);
 // console.log(citrus);
 
-// Loops
-// MDN's Looping Code
-const cats = ["Leopard","Serval","Jaguar","Tiger","Caracal","Lion"];
+// // Loops
+// // MDN's Looping Code
+// const cats = ["Leopard","Serval","Jaguar","Tiger","Caracal","Lion"];
 
-// Given the collection cats, get the first item in the collection
-// Assign it to the variable cat and then run the code between {}
-// Then repeat
-for (const cat of cats) {
-    console.log(cat);
-}
-
-function toUpper(string) {
-    return string.toUpperCase();
-}
-
-const upperCats = cats.map(toUpper);
-
-console.log(upperCats);
-console.log(cats);
-
-function lCat(cat) {
-    return cat.startsWith("L");
-}
-
-const filtered = cats.filter(lCat);
-
-console.log(filtered);
-
-const filtered2 = cats.filter((cat) => cat.startsWith("L"));
-console.log(filtered2);
-
-// for (initializer; condition; final-expression) {
-//          code to run
+// // Given the collection cats, get the first item in the collection
+// // Assign it to the variable cat and then run the code between {}
+// // Then repeat
+// for (const cat of cats) {
+//     console.log(cat);
 // }
 
-// initializer - a variable set to a number, can also refer to as 
-// counter variable
-// condition
-// final-expression
-
-for (const cat of cats) {
-    console.log(cat);
-}
-
-console.log("----------------------");
-for (let i = 0; i < cats.length; i++) {
-    console.log(cats[i]);
-}
-
-//----------------------------------------
-const cats2 = ["Pete","Biggles","Jasmine"];
-let myFavouriteCats = "My cats are called ";
-
-// for (const cat of cats2) {
-//     myFavouriteCats += `${cat}, `;
+// function toUpper(string) {
+//     return string.toUpperCase();
 // }
 
-for (let i = 0; i < cats2.length; i++) {
-    if (i === cats2.length - 1) {
-        myFavouriteCats += ` and ${cats2[i]}.`;
-    } else {
-        myFavouriteCats += `${cats[i]}, `;
-    }
-}
+// const upperCats = cats.map(toUpper);
 
-console.log(myFavouriteCats);
+// console.log(upperCats);
+// console.log(cats);
 
-// Exiting loops with break 
-// Skipping iterations with continue
-// While and do...while
-
-// initializer
-// while(condition) {
-//     // code to run
-//     final-expression
+// function lCat(cat) {
+//     return cat.startsWith("L");
 // }
 
-// cats2
-// myFavouriteCats2
-let myFavouriteCats2 = "My cats are called ";
-let i = 0;
+// const filtered = cats.filter(lCat);
 
-while (i < cats2.length) {
-    if (i === cats2.length - 1) {
-        myFavouriteCats2 += `and ${cats2[i]}.`;
-    } else {
-        myFavouriteCats2 += `${cats2[i]}, `;
-    }
-    i++;
-}
+// console.log(filtered);
 
-console.log(myFavouriteCats2);
+// const filtered2 = cats.filter((cat) => cat.startsWith("L"));
+// console.log(filtered2);
 
-// initializer
+// // for (initializer; condition; final-expression) {
+// //          code to run
+// // }
+
+// // initializer - a variable set to a number, can also refer to as 
+// // counter variable
+// // condition
+// // final-expression
+
+// for (const cat of cats) {
+//     console.log(cat);
+// }
+
+// console.log("----------------------");
+// for (let i = 0; i < cats.length; i++) {
+//     console.log(cats[i]);
+// }
+
+// //----------------------------------------
+// const cats2 = ["Pete","Biggles","Jasmine"];
+// let myFavouriteCats = "My cats are called ";
+
+// // for (const cat of cats2) {
+// //     myFavouriteCats += `${cat}, `;
+// // }
+
+// for (let i = 0; i < cats2.length; i++) {
+//     if (i === cats2.length - 1) {
+//         myFavouriteCats += ` and ${cats2[i]}.`;
+//     } else {
+//         myFavouriteCats += `${cats[i]}, `;
+//     }
+// }
+
+// console.log(myFavouriteCats);
+
+// // Exiting loops with break 
+// // Skipping iterations with continue
+// // While and do...while
+
+// // initializer
+// // while(condition) {
+// //     // code to run
+// //     final-expression
+// // }
+
+// // cats2
+// // myFavouriteCats2
+// let myFavouriteCats2 = "My cats are called ";
+// let i = 0;
+
+// while (i < cats2.length) {
+//     if (i === cats2.length - 1) {
+//         myFavouriteCats2 += `and ${cats2[i]}.`;
+//     } else {
+//         myFavouriteCats2 += `${cats2[i]}, `;
+//     }
+//     i++;
+// }
+
+// console.log(myFavouriteCats2);
+
+// // initializer
+// // do {
+// //    // code to run
+// //    final-expression
+// //} while (condition)
+
+// // j 
+// let j = 0;
+// // console.log(cats2);
+
+// let myFavouriteCats3 = "My cats are called ";
 // do {
-//    // code to run
-//    final-expression
-//} while (condition)
+//     if (j === cats2.length - 1) {
+//         myFavouriteCats3 += `and ${cats2[j]}.`;
+//     } else {
+//         myFavouriteCats3 += `${cats2[j]}, `;
+//     }
 
-// j 
-let j = 0;
-// console.log(cats2);
+//     j++;
+// } while (j < cats2.length);
 
-let myFavouriteCats3 = "My cats are called ";
-do {
-    if (j === cats2.length - 1) {
-        myFavouriteCats3 += `and ${cats2[j]}.`;
-    } else {
-        myFavouriteCats3 += `${cats2[j]}, `;
-    }
-
-    j++;
-} while (j < cats2.length);
-
-console.log(myFavouriteCats3);
+// console.log(myFavouriteCats3);
 
 // Active learning: Launch countdown
 // print out a simple countdown to the output box, from 10 down to Blastoff
 // Loop from 10 down to 0. 
 
-for (let i = 10; i > 0 ; i--) {
-    
+// for (let i = 10; i > 0 ; i--) {
+
+// }
+
+
+// JAVASCRIPT.INFO
+// Loops: while and for 
+// The "while" loop
+// while (condition) {
+//     // code
+//     // so-called "loop body"
+// }
+
+// let i = 0;
+// while (i < 3) {
+//     alert(i);
+//     i++;
+// }
+
+// let i = 3;
+// while (i) { // when i becomes 0, the condition becomes falsym and the loop stops
+//     alert(i);
+//     i--;
+// }
+
+// The "do...while" loop
+// do {
+//     // loop body
+// } while (condition);
+
+// use do... while loop if you want the body of the loop to 
+// execute at least once
+// let i = 0;
+// do {
+//     alert(i);
+//     i++;
+// } while (i < 3);
+
+// The "for" loop
+// for (begin; condition; step) {
+//     // ... loop body...
+// } 
+
+// for (let i = 0; i < 3; i++) {
+//     alert(i);
+// }
+
+// Inline variable declaration
+// for (let i = 0; i < 3; i++) {
+//     alert(i); 
+// }
+// alert(i);
+
+// let  i = 0;
+// for (i = 0; i < 3; i++) {
+//     alert(i);
+// }
+
+// alert(i);
+
+// Skipping parts
+// let i = 0;
+// for (; i < 3; i++) {
+//     alert(i);
+// }
+
+// let i = 0;
+// for (; i < 3;) {
+//     alert(i++);
+// }
+
+// Breaking the loop
+// let sum = 0;
+// while (true) {
+//     let value = +prompt("Enter a number","");
+//     if (!value) break; 
+//     sum += value;
+// }
+// alert('Sum: ' + sum);
+
+// continue stops the current iteration and forces the loop to start a new one
+// Continue to the next iteration
+// for (let i = 0; i < 10; i++) {
+//     // if true, skip the remaining part of the body
+//     if (i % 2 == 0) continue;
+//     alert(i);
+// }
+
+// for (let i = 0; i < 10; i++) {
+//     if (i % 2) {
+//         alert(i);
+//     }
+// }
+
+
+// No break/continue to the right side of '?'
+// let i = 10;
+// if (i > 5) {
+//     alert(i);
+//     i--;
+// } else {
+//     continue;
+// }
+
+// (i > 5) ? alert(i) : continue;
+
+// Labels for break/continue
+for (let i = 0; i < 3; i++) {
+    for (let j = 0; j < 3; j++) { 
+        let input = prompt(`Value at coords (${i}, ${j})`, '');
+        // what if we want to exit to Done (below)?
+    }
 }
 
-
+alert('Done!');
 
 
 
