@@ -480,14 +480,54 @@
 // (i > 5) ? alert(i) : continue;
 
 // Labels for break/continue
-for (let i = 0; i < 3; i++) {
-    for (let j = 0; j < 3; j++) { 
-        let input = prompt(`Value at coords (${i}, ${j})`, '');
-        // what if we want to exit to Done (below)?
-    }
-}
+// for (let i = 0; i < 3; i++) {
+//     for (let j = 0; j < 3; j++) { 
+//         let input = prompt(`Value at coords (${i}, ${j})`, '');
+//         // what if we want to exit to Done (below)?
+//     }
+// }
 
-alert('Done!');
+// alert('Done!');
+
+// a label is an identifier with a colon before a loop
+// labelName: for (...) {
+//     ...
+// }
+
+// outer: for (let i = 0; i < 3; i++) {
+//     for (let j = 0; j < 3; j++) { 
+//         let input = prompt(`Value at coords (${i}, ${j})`, '');
+//         // what if we want to exit to Done (below)?
+//         // if an empty string or canceled, then break out of both loops
+//         if (!input) break outer;
+//     }
+// }
+
+// alert('Done!');
+
+// Labels do not allow to "jump" anywhere
+// label: {
+//     break label;
+// }
+
+// Tasks
+// Last loop value
+// 1
+
+// let i = 0;
+// while (i++ < 5 ) alert (i);
+// Which values does the while loop show?
+// alert (i); // 1 2 3 4 
+// alert (i); // 1 2 3 4 5
+
+// Which values get shown by the "for" loop?
+// 0 1 2 3 4 
+// 0 1 2 3 4
+
+// Output even numbers in the loop
+
+
+
 
 
 
