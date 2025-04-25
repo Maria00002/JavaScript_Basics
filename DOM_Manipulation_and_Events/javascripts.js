@@ -4,3 +4,7 @@
 // Explain the basic methods for finding, adding, removing, and altering DOM Nodes
 // Explain what "bubbling" is and how it works
 
+// review CSS Foundations
+// Flexbox
+// Alignment
+// Project: Landing page
