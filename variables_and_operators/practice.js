@@ -1,35 +1,52 @@
-let name = "John";
-let surname = "Doe";
-let age = 11;
+// let name = "John";
+// let surname = "Doe";
+// let age = 11;
 
-console.log(name);
-console.log(surname);
-console.log(age);
+// console.log(name);
+// console.log(surname);
+// console.log(age);
 
-age = 54;
-console.log(age);
+// age = 54;
+// console.log(age);
 
-const pi = 3.14
-pi = 10;
-console.log(pi);
+// const pi = 3.14
+// pi = 10;
+// console.log(pi);
 
-console.log((3+2)-76*(1+1));
+// console.log((3+2)-76*(1+1));
 
-//// Assignment
-console.log(23+97);
-console.log(1+2+3+4+5+623+97);
-console.log((4+6+9)/77);
+// //// Assignment
+// console.log(23+97);
+// console.log(1+2+3+4+5+623+97);
+// console.log((4+6+9)/77);
 
-let a = 10;
-console.log(a);
+// let a = 10;
+// console.log(a);
 
-a = 20;
-console.log(a);
+// a = 20;
+// console.log(a);
 
-let b = 7*a;
-console.log(b); //140
+// let b = 7*a;
+// console.log(b); //140
 
-const max = 57;
-const actual = max-13;
-const percentage = actual/max;
-console.log(percentage);
+// const max = 57;
+// const actual = max-13;
+// const percentage = actual/max;
+// console.log(percentage);
+
+//////// Tasks from jacascript.info/variables#variable-naming
+//// Working with variables
+let admin;
+let name;
+name = "John";
+admin = name;
+alert(admin);
+
+
+// Giving the right name
+const EARTH = "earth";
+let currentUserName;
+
+// Uppercase const?
+// can make birthday uppercase
+// do not make age upper case
