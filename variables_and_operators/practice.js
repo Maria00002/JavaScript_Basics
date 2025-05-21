@@ -70,14 +70,88 @@
 // console.log(num2--);
 // console.log(num2);
 
-let num1 = 4;
-console.log(++num1);
-console.log(num1);
+// let num1 = 4;
+// console.log(++num1);
+// console.log(num1);
 
-let num2 = 6;
-console.log(--num2);
-console.log(num2);
+// let num2 = 6;
+// console.log(--num2);
+// console.log(num2);
 
-console.log(5!==(2+3));
+// console.log(5!==(2+3));
+
+
+////////// Basic operators, maths
+// Numeric conversion, unary +
+// let x = 1;
+// console.log(+x);
+
+// let y = -2;
+// console.log(+y);
+
+// console.log(+true);
+// console.log(+"");
+
+// console.log(Number(""));
+// console.log(Number(true));
+
+// let a = 1;
+// let b = 2;
+
+// let c=3-(a=b+1);
+// console.log(a);
+// console.log(c);
+
+// let a,b,c;
+
+// a=b=c=2+2;
+// console.log(a);
+// console.log(b);
+// console.log(c);
+
+// c = 2+2;
+// b = c;
+// a = c;
+
+// let n = 2;
+// n = n + 5;
+// n = n * 2;
+
+// let n = 2;
+// n += 5;
+// n *= 2;
+
+// console.log(n);
+
+// let n = 2;
+// n *= 3 + 5;
+
+// console.log(n);
+
+// The postfix and prefix forms
+// let a = 1, b = 1;
+// let c = ++a; //2
+// let d = b++; //1
+// console.log(c);
+// console.log(d);
+
+// let a = 2;
+// let x = 1 + (a *= 2); //a=4,x=5
+// console.log(a);
+// console.log(x);
+
+let a = prompt("First number?", 1);
+let b = prompt("Second number?", 2);
+alert(+a + + b);
+
+
+
+
+
+
+
+
+
+
 
 
