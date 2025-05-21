@@ -36,17 +36,48 @@
 
 //////// Tasks from jacascript.info/variables#variable-naming
 //// Working with variables
-let admin;
-let name;
-name = "John";
-admin = name;
-alert(admin);
+// let admin;
+// let name;
+// name = "John";
+// admin = name;
+// alert(admin);
 
 
-// Giving the right name
-const EARTH = "earth";
-let currentUserName;
+// // Giving the right name
+// const EARTH = "earth";
+// let currentUserName;
 
-// Uppercase const?
-// can make birthday uppercase
-// do not make age upper case
+// // Uppercase const?
+// // can make birthday uppercase
+// // do not make age upper case
+
+
+//////// JavaScript Arithmetic
+// const a = 1.7668945543524168546;
+// const b = a.toFixed(2);
+// console.log(b);
+
+// let myNumber = "74";
+// myNumber = Number(myNumber)+3;
+
+// console.log( myNumber);
+
+// let num1 = 4;
+// console.log(num1++);
+// console.log(num1);
+
+// let num2 = 6;
+// console.log(num2--);
+// console.log(num2);
+
+let num1 = 4;
+console.log(++num1);
+console.log(num1);
+
+let num2 = 6;
+console.log(--num2);
+console.log(num2);
+
+console.log(5!==(2+3));
+
+
