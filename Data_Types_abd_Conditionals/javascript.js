@@ -184,32 +184,46 @@
 // display = "cat"[1];
 // console.log(display);
 
-const a = "a";
-const b = "b";
-if (a<b) {
-    console.log(`${a} is less than ${b}`);
-} else if (a > b) {
-    console.log(`${a} is greater than ${b}`);
-} else {
-    console.log(`${a} and ${b} are equal.`);
-}
+// const a = "a";
+// const b = "b";
+// if (a<b) {
+//     console.log(`${a} is less than ${b}`);
+// } else if (a > b) {
+//     console.log(`${a} is greater than ${b}`);
+// } else {
+//     console.log(`${a} and ${b} are equal.`);
+// }
 
 
-function areEqualCaseInsensitive(str1, str2) {
-    return str1.toUpperCase() === str2.toUpperCase();
-}
+// function areEqualCaseInsensitive(str1, str2) {
+//     return str1.toUpperCase() === str2.toUpperCase();
+// }
 
 
-const areEqualInUpperCase = (str1, str2) =>
-    str1.toUpperCase() === str2.toUpperCase();
-const areEqualInLowerCase = (str1, str2) =>
-    str1.toLowerCase() === str2.toLowerCase();
+// const areEqualInUpperCase = (str1, str2) =>
+//     str1.toUpperCase() === str2.toUpperCase();
+// const areEqualInLowerCase = (str1, str2) =>
+//     str1.toLowerCase() === str2.toLowerCase();
 
-console.log(areEqualInUpperCase("a","A"));
-
-
+// console.log(areEqualInUpperCase("a","A"));
 
 
+// console.log(null == undefined); //true
+// console.log(null > 0); //false
+// console.log(null == 0); //false
+// console.log(null >= 0); //true
+
+// console.log(undefined > 0); //false
+// console.log(undefined < 0); //false
+// console.log(undefined == 0); //false
+
+console.log(5 > 4); //true
+console.log("apple" > "pineapple"); //false
+console.log("2" > "12"); //true
+console.log(undefined == null); //true
+console.log(undefined === null); //false
+console.log(null == "\n0\n"); //false because null only equals to undefined
+console.log(null === +"\n0\n"); //false
 
 
 
