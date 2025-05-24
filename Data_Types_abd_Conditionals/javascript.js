@@ -169,13 +169,47 @@
 // text = text.replaceAll(/cats/g,"dogs");
 // console.log(text);
 
-let text = "a,b,c,d,e,f";
-const myArray = text.split(",");
-console.log(myArray[0]);
-console.log(myArray);
+// let text = "a,b,c,d,e,f";
+// const myArray = text.split(",");
+// console.log(myArray[0]);
+// console.log(myArray);
 
-let text2 = "Hello";
-single = text2.split("");
-console.log(single);
+// let text2 = "Hello";
+// single = text2.split("");
+// console.log(single);
+
+///// Character access
+// let display = "cat".charAt(1);
+// console.log(display);
+// display = "cat"[1];
+// console.log(display);
+
+const a = "a";
+const b = "b";
+if (a<b) {
+    console.log(`${a} is less than ${b}`);
+} else if (a > b) {
+    console.log(`${a} is greater than ${b}`);
+} else {
+    console.log(`${a} and ${b} are equal.`);
+}
+
+
+function areEqualCaseInsensitive(str1, str2) {
+    return str1.toUpperCase() === str2.toUpperCase();
+}
+
+
+const areEqualInUpperCase = (str1, str2) =>
+    str1.toUpperCase() === str2.toUpperCase();
+const areEqualInLowerCase = (str1, str2) =>
+    str1.toLowerCase() === str2.toLowerCase();
+
+console.log(areEqualInUpperCase("a","A"));
+
+
+
+
+
 
 
