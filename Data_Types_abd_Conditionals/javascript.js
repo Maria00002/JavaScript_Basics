@@ -217,13 +217,33 @@
 // console.log(undefined < 0); //false
 // console.log(undefined == 0); //false
 
-console.log(5 > 4); //true
-console.log("apple" > "pineapple"); //false
-console.log("2" > "12"); //true
-console.log(undefined == null); //true
-console.log(undefined === null); //false
-console.log(null == "\n0\n"); //false because null only equals to undefined
-console.log(null === +"\n0\n"); //false
+// console.log(5 > 4); //true
+// console.log("apple" > "pineapple"); //false
+// console.log("2" > "12"); //true
+// console.log(undefined == null); //true
+// console.log(undefined === null); //false
+// console.log(null == "\n0\n"); //false because null only equals to undefined
+// console.log(null === +"\n0\n"); //false
+
+// let hour = new Date().getHours();
+// if (hour < 10) {
+//     greeting = "Good morning";
+// } else if (hour < 20) {
+//     greeting = "Good day";
+// } else {
+//     greeting = "Good evening";
+// }
+
+// console.log(greeting);
+
+let text;
+if (Math.random() < 0.5) {
+    text = "<a href='https://w3schools.com'>Visit W3Schools</a>";
+} else {
+    text = "<a href='https://wwf.org'>Visit WWF</a>";
+}
+document.getElementById("demo").innerHTML = text;
+console.log(text);
 
 
 
