@@ -236,14 +236,114 @@
 
 // console.log(greeting);
 
-let text;
-if (Math.random() < 0.5) {
-    text = "<a href='https://w3schools.com'>Visit W3Schools</a>";
+// let text;
+// if (Math.random() < 0.5) {
+//     text = "<a href='https://w3schools.com'>Visit W3Schools</a>";
+// } else {
+//     text = "<a href='https://wwf.org'>Visit WWF</a>";
+// }
+// document.getElementById("demo").innerHTML = text;
+// console.log(text);
+
+
+///////////////// Logical operators
+// console.log(true || true); //true
+// console.log(false || true); //true
+// console.log(true || false); //true
+// console.log(false ||false); //false
+
+// if (1 || 0) {
+//     alert('truthy!');
+// }
+
+// let hour = 9;
+
+// if (hour < 10 || hour >18) {
+//     console.log("The office is closed");
+// }
+
+// let hour = 12;
+// let isWeekend = true;
+
+// if (hour < 10 || hour >18 || isWeekend) {
+//     console.log("The office is closed");
+// }
+
+// console.log(true || alert("not printed"));
+// console.log(false || alert("printed"));
+
+// console.log(true && true);
+// console.log(false && true);
+// console.log(true && false);
+// console.log(false && false);
+
+// let hour = 12;
+// let minute = 30;
+// if (hour == 12 && minute == 30) {
+//     console.log("The time is 12:30");
+// }
+
+
+// if (1 && 0) {
+//     console.log("Won't work, because the result is falsy.");
+// }
+
+// console.log(1 && 0);
+// console.log(1 && 5);
+
+// console.log(null && 5);
+// console.log(0 && "no matter what");
+
+// console.log(1 && 2 && null && 3);
+// console.log(1 && 2 && 3);
+
+// console.log(!!"non-empty string");
+// console.log(!!null);
+
+// console.log(Boolean("non-empty string"));
+// console.log(Boolean(null));
+
+///// Tasks
+// console.log(null || 2 || undefined); //2
+
+// alert(alert(1) || 2 || alert(3)); //alert(1), 2
+
+// console.log(1 && null && 2); //null
+
+// alert(alert(1) && alert(2)); //1, undefined
+
+// alert(null || 2 && 3 || 4); // null || 3 || 4, return 3
+
+// let age;
+// if (age >= 14 && age <= 90) {
+//     console.log("Right Age");
+// }
+
+// let age;
+// if (!(age >= 14 && age <= 90)) {}
+// if (age < 14 || age > 90) {}
+
+// if (-1 || 0) alert("first"); //-1, first
+// if (-1 && 0) alert("second"); // 0, undefined
+// if ( null || -1 && 1) alert("third"); // 1, third
+
+let answer = prompt("Who is there?","");
+if (answer == "Admin") {
+    let password = prompt("What is the password?","");
+    if (password == "TheMaster"){
+        console.log("Welcome");
+    } else if (password == "" || password == null){
+        console.log("Canceled");
+    }else {
+        console.log("Wrong password");
+    }
+} else if (answer == "" || answer == null) {
+    console.log("Canceled");
 } else {
-    text = "<a href='https://wwf.org'>Visit WWF</a>";
-}
-document.getElementById("demo").innerHTML = text;
-console.log(text);
+    console.log("I don't know you");
+} 
+
+
 
 
 
