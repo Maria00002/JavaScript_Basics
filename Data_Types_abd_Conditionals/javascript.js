@@ -348,9 +348,66 @@
 //   ? "Happy birthday Mrs.Smith - we hope you have a great day!"
 //   : "Good morning Mrs. Smith.";
 
+//////// Conditional branching: if,"?"
+// let year = prompt("In what year is the correct answer?","");
+
+// let cond = (year == 2015);
+// if (cond) {
+//     alert("You are right!");
+// } else {
+//     alert("expecting a different answer");
+// }
 
 
+// let accessAllowed;
+// let age = prompt("How old are you?","");
 
+// // if (age > 18) {
+// //     accessAllowed = true;
+// // } else {
+// //     accessAllowed = false;
+// // }
+
+// accessAllowed = (age > 18) ? true : false;
+
+// alert(accessAllowed);
+
+// let age = prompt("age",18);
+
+// let message = (age < 3) ? 'Hi, baby!' :
+//     (age < 18) ? 'Hello' :
+//     (age < 100) ? 'Greetings!' : 
+//     "What an unusual age!";
+
+// alert(message);
+
+////// THe name of JavaScript
+// let answer = prompt("What is the 'official' name of JavaScript?","");
+// if (answer == "ECMAScript") {
+//     alert("right");
+// } else {
+//     alert("You don't know? ECMAScript!")
+// }
+
+// let number = prompt("Show me a number", "");
+// if (number > 0 ) {
+//     alert("1");
+// } else if (number < 0) {
+//     alert("-1");
+// } else if (number == 0 ) {
+//     alert("0")
+// }
+
+//////// Rewrite "if" into "?"
+// let a = 4;
+// let b = 1;
+// let result = (a + b < 4) ? "Below" : "Over";
+// alert(result);
+
+// let message = (login == 'Employee') ? 'Hello' :
+//     (login == 'Director') ? 'Greetings' : 
+//     (login == "") ? 'No login' :
+//     '';
 
 
 
