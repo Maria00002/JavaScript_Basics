@@ -327,21 +327,30 @@
 // if (-1 && 0) alert("second"); // 0, undefined
 // if ( null || -1 && 1) alert("third"); // 1, third
 
-let answer = prompt("Who is there?","");
-if (answer == "Admin") {
-    let password = prompt("What is the password?","");
-    if (password == "TheMaster"){
-        console.log("Welcome");
-    } else if (password == "" || password == null){
-        console.log("Canceled");
-    }else {
-        console.log("Wrong password");
-    }
-} else if (answer == "" || answer == null) {
-    console.log("Canceled");
-} else {
-    console.log("I don't know you");
-} 
+// let answer = prompt("Who is there?","");
+// if (answer == "Admin") {
+//     let password = prompt("What is the password?","");
+//     if (password == "TheMaster"){
+//         console.log("Welcome");
+//     } else if (password == "" || password == null){
+//         console.log("Canceled");
+//     }else {
+//         console.log("Wrong password");
+//     }
+// } else if (answer == "" || answer == null) {
+//     console.log("Canceled");
+// } else {
+//     console.log("I don't know you");
+// } 
+
+//////////// Making decisions in your code - conditionals
+// const greeting = isBirthday
+//   ? "Happy birthday Mrs.Smith - we hope you have a great day!"
+//   : "Good morning Mrs. Smith.";
+
+
+
+
 
 
 
