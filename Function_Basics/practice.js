@@ -202,19 +202,89 @@
 
 // showPrimes(10);
 
-function showPrimes(n) {
-    for (let i = 2; i < n; i++) {
-        if (!isPrime(i)) continue;
-        alert(i);
-    }
-}
+// function showPrimes(n) {
+//     for (let i = 2; i < n; i++) {
+//         if (!isPrime(i)) continue;
+//         alert(i);
+//     }
+// }
 
-function isPrime(n) {
-    for (let i = 2; i < n; i++) {
-        if (n % i == 0) return false;
+// function isPrime(n) {
+//     for (let i = 2; i < n; i++) {
+//         if (n % i == 0) return false;
+//     }
+//     return true;
+// }
+
+/////// Tasks
+/// Is "else" required?
+// function checkAge(age) {
+//     if (age > 18) {
+//         return true;
+//     } else {
+//         return confirm("Did your parents allow you?");
+//     }
+// }
+// This will prompt the asking of confirmation only when the age is 
+// less than 18
+/////// The following code will execute the lines of code the same 
+///// as above
+
+// function checkAge(age) {
+//     if (age > 18) {
+//         return true;
+//     }
+//     return confirm("Did parents allow you?");
+// }
+
+
+////////// Rewrite the function using "?" or "||"
+// function checkAge(age) {
+//     let result = (age > 18) ? true : confirm("Did parents allow you?");
+//     return result;
+// }
+
+// function checkAge(age) {
+//     let result = (age > 18) || confirm("Did parents allow you?");
+//     return result;
+// }
+
+////// Function min(a,b) returns the least of two numbers a and b
+// function min(a,b) {
+//     if (a < b) {
+//         return a;
+//     } else {
+//         return b;
+//     }
+// }
+
+// console.log(min(2,5));
+// console.log(min(3,-1));
+// console.log(min(1,1));
+
+////////// Function pow(x,n)
+let x = prompt("x: ", "");
+let n = prompt("n: ","");
+
+if ( n < 1) {
+    alert("Please enter a number that is natural values up from 1");
+ } else {
+    alert(pow(x,n));
+ }
+
+function pow(x,n) {
+    let result = 1;
+    for (let i = 1; i <= n; i++) {
+        result *= x; 
     }
-    return true;
+    return result;
 }
+// console.log(pow(x,n));
+// console.log(pow(3,2));
+// console.log(pow(3,3));
+// console.log(pow(1,100));
+// console.log(pow(3,1));
+
 
 
 
