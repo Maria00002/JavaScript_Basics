@@ -17,21 +17,53 @@
 // const doubled = originals.map(item => item * 2);
 // console.log(doubled);
 
-const x = 1;
-function a() {
-    const y = 2;
-    output(z);
+// const x = 1;
+// function a() {
+//     const y = 2;
+//     output(z);
+// }
+
+// function b() {
+//     const z = 3;
+//     output(y);
+// }
+
+// function output (value) {
+//     const para = document.createElement('p');
+//     document.body.appendChild(para);
+//     para.textContent = `Value: ${value}`;
+// }
+
+
+//////////////////// Function return values
+// const myText = "The weather is cold";
+// const newString = myText.replace("cold","warm");
+// console.log(newString);
+
+
+function squared(num) {
+    return num * num;
 }
 
-function b() {
-    const z = 3;
-    output(y);
+function cubed(num) {
+    return num * num * num;
 }
 
-function output (value) {
-    const para = document.createElement('p');
-    document.body.appendChild(para);
-    para.textContent = `Value: ${value}`;
+function factorial(num) {
+    if (num < 0 ) return undefined;
+    if (num === 0) return 1;
+    let x = num - 1;
+    while (x > 1) {
+        num *= x;
+        x--;
+    }
+    return num;
 }
+
+
+
+
+
+
 
 
