@@ -466,16 +466,35 @@
 //////////// Tasks
 ///// Rewrite with arrow functions
 
-function ask(question, yes, no) {
-    if (confirm(question)) yes();
-    else no();
-}
+// function ask(question, yes, no) {
+//     if (confirm(question)) yes();
+//     else no();
+// }
 
 
-ask (
-    "Do you agree?", 
-    () => alert("You agreed."),
-    () => alert("YOu canceled the execution")
-);
+// ask (
+//     "Do you agree?", 
+//     () => alert("You agreed."),
+//     () => alert("YOu canceled the execution")
+// );
+
+
+///////////// JavaScript Call Stack
+////// The call stack uses the stack data structure that works based 
+//////// on the LIFO (last-in-first-out) principle
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
