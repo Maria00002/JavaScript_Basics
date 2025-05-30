@@ -483,6 +483,33 @@
 ////// The call stack uses the stack data structure that works based 
 //////// on the LIFO (last-in-first-out) principle
 
+//////// Write some functions
+function add7(number) {
+    return number + 7;
+}
+
+function multiply (numa, numb) {
+    return numa * numb;
+}
+
+function capitalize(string) {
+    string = string.toLowerCase();
+    string = string[0].toUpperCase() + string.slice(1);
+    return string;
+}
+
+function lastLetter(string) {
+    return string.charAt(string.length-1);
+}
+
+
+console.log(add7(1)); //8
+console.log(multiply(3,4)); //3*4=12
+console.log(capitalize("apple")); //Apple
+console.log(capitalize("APPLE")); //Apple
+console.log(capitalize("aPPLE")); //Apple
+console.log(lastLetter("abcd")); //d
+
 
 
 
