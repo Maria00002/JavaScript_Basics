@@ -428,3 +428,54 @@
 // welcome();
 // welcome();
 // welcome();
+
+
+/////////// Arrow functions, the basics
+// let func = (arg1, arg2) => expression;
+
+// let func = function(arg1, arg2) {
+//     return expression;
+// }
+
+
+// let sum = (a, b) => a + b;
+// alert(sum(1,2));
+
+// let double = n => n * 2;
+// alert(double(3));
+
+// let sayHi = () => alert("Hello!");
+// sayHi();
+
+// let age = prompt("What is your age?", 18);
+
+// let welcome = (age < 18) ?
+//     () => alert("Hello!") :
+//     () => alert("Greetings!");
+
+// welcome();
+
+//////////// Multiline arrow functions
+// let sum = (a ,b) => {
+//     let result = a + b;
+//     return result;
+// }
+
+// alert(sum(1,2));
+
+//////////// Tasks
+///// Rewrite with arrow functions
+
+function ask(question, yes, no) {
+    if (confirm(question)) yes();
+    else no();
+}
+
+
+ask (
+    "Do you agree?", 
+    () => alert("You agreed."),
+    () => alert("YOu canceled the execution")
+);
+
+
