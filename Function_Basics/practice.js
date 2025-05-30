@@ -263,38 +263,168 @@
 // console.log(min(1,1));
 
 ////////// Function pow(x,n)
-let x = prompt("x: ", "");
-let n = prompt("n: ","");
+// let x = prompt("x: ", "");
+// let n = prompt("n: ","");
 
-if ( n < 1) {
-    alert("Please enter a number that is natural values up from 1");
- } else {
-    alert(pow(x,n));
- }
+// if ( n < 1) {
+//     alert("Please enter a number that is natural values up from 1");
+//  } else {
+//     alert(pow(x,n));
+//  }
 
-function pow(x,n) {
-    let result = 1;
-    for (let i = 1; i <= n; i++) {
-        result *= x; 
-    }
-    return result;
-}
+// function pow(x,n) {
+//     let result = 1;
+//     for (let i = 1; i <= n; i++) {
+//         result *= x; 
+//     }
+//     return result;
+// }
 // console.log(pow(x,n));
 // console.log(pow(3,2));
 // console.log(pow(3,3));
 // console.log(pow(1,100));
 // console.log(pow(3,1));
 
+/////////////// Function expressions
+// function sayHi() {
+//     alert("Hello");
+// }
+
+////// Function expression
+// let sayHi = function() {
+//     alert("Hi");
+// };
+
+// let func = sayHi;
+
+// func();
+// sayHi();
+
+// let sayHi = function() {
+//     alert("Hello");
+// };
+
+// let func = sayHi;
+
+////// Callback functions
+// function ask(question, yes, no) {
+//     if (confirm(question)) yes()
+//     else no();
+// }
+
+// function showOk() {
+//     alert("You agreed.");
+// }
+
+// function showCancel() {
+//     alert("You canceled the execution.");
+// }
+
+// ask("Do you agree?", showOk, showCancel);
+
+//////////// Use Function Expressions to write an equivalent, shorter function
+// function ask(question, yes, no) {
+//     if(confirm(question)) yes();
+//     else no();
+// }
+
+// ask(
+//     "Do you agree?",
+//     function() {alert("You agreed.");},
+//     function() {alert("You canceled the execution.");}
+// );
+
+///////// Function Expression vs Function Declaration
+///////// Function Declaraion: a function, declared as a separate statement
+//// in the main code flow
+
+// function sum(a,b) {
+//     return a + b;
+// }
+
+// ///////////// Function Expression: a function, created inside an expression
+// /////// or inside another syntax construct. 
+// let sum = function(a,b) {
+//     return a + b;
+// }
+
+////// A Function Declaration can be called earlier than it is defined
+// sayHi("John");
+
+// function sayHi(name) {
+//     alert(`Hello, ${name}`);
+// }
+
+// sayHi("John");
+
+// let sayHi = function(name) {
+//     alert(`Hello, ${name}`);
+// }
+
+// let age = prompt("What is your age?", 18);
+// if (age < 18) {
+//     function welcome() {
+//         alert("Hello!");
+//     }
+// } else {
+//     function welcome() {
+//         alert("Greetings!");
+//     }
+// }
+
+// welcome();
+
+// let age = 16;
+// if (age < 18) {
+//     welcome();
+//     function welcome() {
+//         alert("Hello!");
+//     }
+//     welcome();
+// } else {
+//     function welcome() {
+//         alert("Greetings!");
+//     }
+// }
+
+// welcome();
+
+// let age = prompt("What is your age?", 18);
+// let welcome;
+
+// if (age < 18) {
+//     welcome = function() {
+//         alert("Hello!");
+//     };
+// } else {
+//     welcome = function() {
+//         alert("Greetings!");
+//     };
+// }
+
+// welcome();
+// welcome();
+// welcome();
+
+// let age = prompt("What is your age?", 18);
+// let welcome = (age < 18) ?
+//     function() {alert("Hello!");} :
+//     function() {alert("Greetings!");};
+
+// welcome();
 
 
+// let age = prompt("What is your age?", 18);
+// if (age < 18) {
+//     function welcome() {
+//         alert("Hello!");
+//     }
+// } else {
+//     function welcome() {
+//         alert("Greetings!");
+//     }
+// }
 
-
-
-
-
-
-
-
-
-
-
+// welcome();
+// welcome();
+// welcome();
