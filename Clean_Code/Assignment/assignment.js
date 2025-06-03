@@ -31,3 +31,65 @@
 // If there are too many style sheets, they can probably be 
 // summarized into one or two. 
 // THis will save space and make things look cleaner, and also save loading time
+
+// ----------------------------------------------------------------------------
+// ---------------------------------------------------------------------------------------
+// Code Tells You How, Comments Tell You Why
+// Coding Without COmments
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
