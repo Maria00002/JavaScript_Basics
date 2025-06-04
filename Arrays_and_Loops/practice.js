@@ -157,28 +157,46 @@
 //// Don't want to invite Phil and Lola
 //// Have two lists: one for guests to admit, one for guests to refuse
 
-const people = ["Chris","Anne","Colin","Terri","Phil","Lola","Sam","Kay","Bruce"];
-let admitted = "";
-let refused =  "";
+// const people = ["Chris","Anne","Colin","Terri","Phil","Lola","Sam","Kay","Bruce"];
+// let admitted = "";
+// let refused =  "";
 
-for (const guest of people) {
-    if (guest == "Phil" || guest == "Lola") {
-        refused += `${guest}, `;
-    } else {
-        admitted += `${guest}, `;
-    }
+// for (const guest of people) {
+//     if (guest == "Phil" || guest == "Lola") {
+//         refused += `${guest}, `;
+//     } else {
+//         admitted += `${guest}, `;
+//     }
+// }
+
+// refused = refused.slice(0,refused.length-2) + ".";
+// admitted = admitted.slice(0, admitted.length-2) + ".";
+// console.log(refused);
+// console.log(admitted);
+
+///// use map() to do something to each item in a collection and create 
+//// a new collection containing the changed items
+//// map() calls the function once for each item in the array, passing
+//// in the item. 
+// function toUpper(string) {
+//     return string.toUpperCase();
+// }
+
+// const cats = ["Leopard","Serval","Jaguar","Tiger","Caracal","Lion"];
+// const upperCats = cats.map(toUpper);
+// console.log(cats);
+// console.log(upperCats);
+
+////// use filter() to test each item in a collection, and create 
+////// a new collection containing only items that match
+function lCat(cat) {
+    return cat.startsWith("L");
 }
 
-refused = refused.slice(0,refused.length-2) + ".";
-admitted = admitted.slice(0, admitted.length-2) + ".";
-console.log(refused);
-console.log(admitted);
+const cats = ["Leopard","Serval","Jaguar","Tiger","Caracal","Lion"];
 
-
-
-
-
-
+const filtered = cats.filter(lCat);
+console.log(filtered);
 
 
 
