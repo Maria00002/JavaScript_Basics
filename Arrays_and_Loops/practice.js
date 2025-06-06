@@ -331,9 +331,189 @@
 // // a.push("E");
 // a.push([1,2]);
 
-const a = [["A","B"],["1,2"]];
-a[0] = 1;
-console.log(a);
+// const a = [["A","B"],["1,2"]];
+// a[0] = 1;
+// console.log(a);
+
+/////// Arrays
+///// Declaration
+// let arr = new Array();
+// let arr1 = [];
+
+// let fruits = ["Apple","Orange","Plum"];
+// console.log(fruits[0]);
+// console.log(fruits[1]);
+// console.log(fruits[2]);
+
+// fruits[2] = "Pears";
+// fruits[3] = "Lemon";
+// console.log(fruits);
+// console.log(fruits.length);
+// console.log(fruits);
+
+// let arr = ["Apple", {name:'John'}, true, function(){alert('hello');}];
+// console.log(arr[1].name);
+// arr[3]();
+
+// let fruits = [
+//     "Apple",
+//     "Orange",
+//     "Plum",
+// ];
+// console.log(fruits);
+
+// let fruits = ["Apple", "Orange","Plum"];
+// console.log(fruits[fruits.length-1]);
+// console.log(fruits.at(-1));
+
+// let fruits = ["Apple", "Orange","Plum"];
+// console.log(fruits.pop());
+// console.log(fruits);
+
+// let fruits = ["Apple", "Orange"];
+// console.log(fruits.push("Pear"));
+// console.log(fruits);
+
+// let fruits = ["Apple", "Orange","Pear"];
+// console.log(fruits.shift());
+// console.log(fruits);
+
+// let fruits = ["Orange","Pear"];
+// console.log(fruits.unshift("Apple"));
+// console.log(fruits);
+
+// let fruits = ["Apple"];
+// fruits.push("Orange","Peach");
+// fruits.unshift("Pineapple","Lemon");
+// console.log(fruits);
+
+// let fruits = ["Banana"];
+// let arr = fruits;
+// console.log(arr === fruits); //true
+// arr.push("Pear");
+// console.log(fruits);
+
+// let fruits = [];
+// fruits[99999] = 5;
+// fruits.age = 25;
+
+// let arr = ["Apple","Orange","Pear"];
+
+// for(let i = 0; i < arr.length; i++) {
+//     console.log(arr[i]);
+// }
+
+// let fruits = ["Apple","Orange","Plum"];
+
+// for (let fruit of fruits) {
+//     console.log(fruit);
+// }
+
+// let fruits = [];
+// fruits[123] = "Apple";
+// console.log(fruits.length);
+
+
+// let arr = [1,2,3,4,5];
+// arr.length = 2;
+// console.log(arr);
+
+// arr.length = 5;
+// console.log(arr[3]);
+// console.log(arr);
+
+// arr.length = 0;
+// console.log(arr);
+
+
+// let arr = new Array("Apple","Pear","etc");
+
+// let arr = new Array(2);
+// console.log(arr[0]);
+// console.log(arr.length);
+
+// let matrix = [
+//     [1,2,3],
+//     [4,5,6],
+//     [7,8,9]
+// ];
+// console.log(matrix[0][1]);
+
+// let arr = [1,2,3];
+// console.log(arr);
+// console.log(String(arr) === "1,2,3");
+
+// console.log([] + 1);
+// console.log([1] + 1);
+// console.log([1,2] + 1);
+
+// console.log([]==[]);
+// console.log([0]==[0]);
+
+// square brackets (usual)
+// let arr = [item1, item2];
+
+// let arr1 = new Array(item1, item2);
+
+//// Tasks
+// Is array copied?
+// let fruits = ["APples","Pear","Orange"];
+// let shoppingCart = fruits;
+// shoppingCart.push("Banana");
+// console.log(fruits.length); //4
+
+// let styles = ["Jazz", "Blues"]; // 1
+// console.log(styles);
+// styles.push("Rock-n-Roll"); // 2
+// console.log(styles);
+// // styles[1] = "Classics";
+// let midIndex = Math.floor(styles.length / 2); // 3
+// styles[midIndex] = "Classics";
+// console.log(styles);
+// let value =  styles.shift(); // 4
+// console.log(styles); 
+// styles.unshift("Rap","Reggae"); // 5
+// console.log(styles);
+
+// let arr = ["a","b"];
+// arr.push(function() {
+//     console.log(this);
+// });
+
+// arr[2](); // a,b,function()
+
+// sumInput() 
+// Ask the user for values using prompt and stores the values in the array
+// FInishing asking when the user enters a non-numeric value, an empty 
+// string, or presses "Cancel"
+// Calcualtes and returns the sum of array items
+
+// function sumInput() {
+//     let arr = [];
+//     let value = prompt("Please enter a value: ","");
+//     let sum = 0;
+    
+//     while(!(value === "" || isNaN(Number(value)) || value === null)) {
+//         value = Number(value);
+//         arr.push(value);
+//         value = prompt("Please enter a value: ","");
+//     }
+//     console.log(arr);
+//     for (let number of arr) {
+//         sum += Number(number);
+//     }
+//     console.log(sum);
+// }
+
+// sumInput();
+
+// A maximal subarray
+// e.g. arr = [1,-2,3,4,-9,6]
+// Task is to find the contiguous subarray of arr with the maximal sum 
+// of items
+
+
+
 
 
 
