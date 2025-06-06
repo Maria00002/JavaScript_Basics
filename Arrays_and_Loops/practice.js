@@ -316,16 +316,15 @@
 
 ////// Output prime numbers
 let number = prompt("Please enter a number: ","");
-if (number == 1) {
-    console.log(number);
-} else {
-    for (let i = 2; i < number; i++) {
-        if (!(number % i) == 0) {
-            console.log(i);
-        }
+nextPrime: 
+for (let i = 2; i <= number; i++) {
+    for (let j = 2; j < i; j++) {
+            if (i % j == 0) continue nextPrime;
     }
-
+    console.log(i); 
+       
 }
+
 
 
 
