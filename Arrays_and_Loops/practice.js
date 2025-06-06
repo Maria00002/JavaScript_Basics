@@ -189,14 +189,145 @@
 
 ////// use filter() to test each item in a collection, and create 
 ////// a new collection containing only items that match
-function lCat(cat) {
-    return cat.startsWith("L");
+// function lCat(cat) {
+//     return cat.startsWith("L");
+// }
+
+// const cats = ["Leopard","Serval","Jaguar","Tiger","Caracal","Lion"];
+
+// const filtered = cats.filter(lCat);
+// console.log(filtered);
+
+
+////// Loops: while and for
+// let i = 0;
+// while (i < 3) {
+//     alert(i);
+//     i++;
+// }
+
+// let i = 3;
+// while (i) {
+//     alert(i);
+//     i--;
+// }
+
+// let i = 0;
+// do {
+//     alert(i);
+//     i++;
+// } while (i < 3);
+
+// for (let i = 0; i < 3; i++) {
+//     console.log(i);
+// }
+
+// console.log(i);
+
+// let i = 0;
+// for (i = 0; i < 3; i++) {
+//     console.log(i);
+// }
+
+// console.log(i);
+
+// let i = 0;
+// for (; i < 3; i++) {
+//     console.log(i);
+// }
+
+// let sum = 0;
+// while (true) {
+//     let value = +prompt("Enter a number","");
+//     if (!value) break;
+//     sum += value;
+// }
+// console.log("Sum: " + sum);
+
+// for (let i = 0; i < 10; i++) {
+//     if (i % 2 == 0) continue;
+//     console.log(i);
+// }
+
+// if (i > 5) {
+//     console.log(i);
+// } else {
+//     continue;
+// }
+
+// outer: for (let i = 0; i < 3; i++) {
+//     for (let j = 0; j < 3; j++) {
+//         let input = prompt(`Value at coords (${i},${j})`,"");
+//         if (!input) break outer;
+//     }
+// }
+// console.log("Done!");
+
+/////// Tasks
+////// What is the last value alerted by this code? WHY?
+// let i = 3;
+// while (i) {
+//     alert(i--);
+// }
+
+// 1 should be the last one
+
+///// Which values does the while loop show?
+// let i = 0;
+// while(++i < 5) alert(i); // 1 2 3 4 
+
+// let i = 0;
+// while(i++ < 5) alert(i); // 1 2 3 4 5 
+
+///// Loops does not output the same values
+
+////// Which values get shown by the "for" loop
+// for (let i = 0; i <5; i++) alert(i); // 0 1 2 3 4 
+// for (let i = 0; i <5; ++i) alert(i); // 0 1 2 3 4 
+
+//// Output even numbers in the loop
+//// Use the for loop to output even numbers from 2 to 10
+// for (let i = 2; i <= 10; i++) {
+//     if (i % 2 == 0) {
+//         console.log(i);
+//     }
+// }
+
+
+///// Replace "for" with "While" 
+// for (let i = 0; i < 3; i++) {
+//     console.log(`number ${i}!`);
+// }
+
+// let i = 0;
+// while (i < 3) {
+//     console.log(`number ${i}!`);
+//     i++;
+// }
+
+/////// Repeat until the input is correct
+/////// Write a loop which prompts for a number greater than 100.
+////// If the visitor enters another number - ask them to input again
+// let number;
+// do {
+//     number = prompt("Please enter a number greater than 100", "");
+// }
+// while (!((number>100) || (number=="")))
+
+////// Output prime numbers
+let number = prompt("Please enter a number: ","");
+if (number == 1) {
+    console.log(number);
+} else {
+    for (let i = 2; i < number; i++) {
+        if (!(number % i) == 0) {
+            console.log(i);
+        }
+    }
+
 }
 
-const cats = ["Leopard","Serval","Jaguar","Tiger","Caracal","Lion"];
 
-const filtered = cats.filter(lCat);
-console.log(filtered);
 
 
 
