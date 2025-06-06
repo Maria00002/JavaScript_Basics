@@ -315,16 +315,25 @@
 // while (!((number>100) || (number=="")))
 
 ////// Output prime numbers
-let number = prompt("Please enter a number: ","");
-nextPrime: 
-for (let i = 2; i <= number; i++) {
-    for (let j = 2; j < i; j++) {
-            if (i % j == 0) continue nextPrime;
-    }
-    console.log(i); 
+// let number = prompt("Please enter a number: ","");
+// nextPrime: 
+// for (let i = 2; i <= number; i++) {
+//     for (let j = 2; j < i; j++) {
+//             if (i % j == 0) continue nextPrime;
+//     }
+//     console.log(i); 
        
-}
+// }
 
+
+//////// Arrays
+// const a = ["A","B","C","D"];
+// // a.push("E");
+// a.push([1,2]);
+
+const a = [["A","B"],["1,2"]];
+a[0] = 1;
+console.log(a);
 
 
 
