@@ -748,10 +748,10 @@
 // and lower or equal to b and return a result as an array
 // my solution
 
-let arr = [5, 3, 8, 1];
-let filtered = filterRange(arr, 1, 4);
-console.log(filtered);
-console.log(arr);
+// let arr = [5, 3, 8, 1];
+// let filtered = filterRange(arr, 1, 4);
+// console.log(filtered);
+// console.log(arr);
 
 // function filterRange(arr, min, max){
 //     let filtered = [];
@@ -764,11 +764,29 @@ console.log(arr);
 //     return filtered;
 // }
 
-function filterRange(arr, a, b) {
-    return arr.filter(item => (a <= item && item <= b));
+// function filterRange(arr, a, b) {
+//     return arr.filter(item => (a <= item && item <= b));
+// }
+
+// let arr1 = ["a","b","c"];
+// let str = arr1.join("");
+// console.log(str);
+
+// Filter range "in place"
+// gets an array arr and removes from it all values except those that are
+// between a and b 
+
+let arr = [5,3,8,1,12,9,16,25,2];
+function filterRangeInPlace(arr, a, b) {
+    for (let i = 0; i < arr.length; i++) {
+        if (!((arr[i] >= a) && (arr[i]<= b))) {
+            arr.splice(i,1);
+            i--;
+        }
+    }
 }
-
-
+filterRangeInPlace(arr, 1, 4);
+console.log(arr); //[3,1,2]
 
 
 
