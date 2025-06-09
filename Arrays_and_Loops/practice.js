@@ -694,27 +694,43 @@
 // console.log(Array.isArray({}));
 // console.log(Array.isArray([]));
 
-let army = {
-    minAge: 18,
-    maxAge: 27,
-    canJoin(user) {
-        return user.age >= this.minAge && user.age < this.maxAge;
+// let army = {
+//     minAge: 18,
+//     maxAge: 27,
+//     canJoin(user) {
+//         return user.age >= this.minAge && user.age < this.maxAge;
+//     }
+// };
+
+// let users = [
+//     {age: 16},
+//     {age: 20},
+//     {age: 23},
+//     {age: 30}
+// ];
+
+// let soldiers = users.filter(army.canJoin, army);
+// console.log(soldiers);
+// console.log(soldiers.length);
+// console.log(soldiers[0].age);
+// console.log(soldiers[1].age);
+
+// Tasks
+// Translate border-left-width to borderLeftWidth
+function camelize(str) {
+    // use split to split the string into an array
+    let arr = str.split("-");
+    // console.log(arr);
+    let newArr = arr[0];
+    for (let i = 1; i < arr.length; i++) {
+        newArr += arr[i][0].toUpperCase() + arr[i].slice(1);
     }
-};
+    return newArr;
+}
 
-let users = [
-    {age: 16},
-    {age: 20},
-    {age: 23},
-    {age: 30}
-];
-
-let soldiers = users.filter(army.canJoin, army);
-console.log(soldiers);
-console.log(soldiers.length);
-console.log(soldiers[0].age);
-console.log(soldiers[1].age);
-
+console.log(camelize("background-color")); // backgroundColor
+console.log(camelize("list-style-image")); // listStyleImage
+console.log(camelize("-webkit-transition")); //WebkitTransition
 
 
 
