@@ -789,17 +789,46 @@
 // console.log(arr); //[3,1,2]
 
 // sort in decreasing order
-let arr = [5, 2, 1, -10, 8, 15, 20];
-arr.sort(compare).reverse();
-function compare(a,b) {
-    if (a > b) return 1;
-    if (a == b) return 0;
-    if (a < b) return -1;
-}
-console.log(arr); // 20, 15, 8, 5, 2, 1, -10
+// let arr = [5, 2, 1, -10, 8, 15, 20];
+// arr.sort(compare).reverse();
+// function compare(a,b) {
+//     if (a > b) return 1;
+//     if (a == b) return 0;
+//     if (a < b) return -1;
+// }
+// console.log(arr); // 20, 15, 8, 5, 2, 1, -10
 
 // Online solution
 // arr.sort((a,b) => b-a);
+// console.log(arr);
+
+// Copy and sort array
+// an array of strings arr. Have a sorted copy of it, but keep arr unmodified
+// let arr = ["HTML","JavaScript","CSS"];
+// let sorted = copySorted(arr);
+// function copySorted(arr) {
+//     let unmodified = [];
+//     let modified = [];
+//     for (let item of arr){
+//         unmodified.push(item);
+//     }
+//     modified = unmodified.sort();
+//     return modified;
+    
+// }
+
+// console.log(sorted); // CSS, HTML, JavaScript
+// console.log(arr); // html, JavaScript, CSS
+
+// Online solution
+// function copySorted(arr) {
+//     return arr.slice().sort();
+// }
+
+// let arr = ["HTML","JavaScript","CSS"];
+// let sorted = copySorted(arr);
+
+// console.log(sorted);
 // console.log(arr);
 
 
