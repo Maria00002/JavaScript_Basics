@@ -776,18 +776,30 @@
 // gets an array arr and removes from it all values except those that are
 // between a and b 
 
-let arr = [5,3,8,1,12,9,16,25,2];
-function filterRangeInPlace(arr, a, b) {
-    for (let i = 0; i < arr.length; i++) {
-        if (!((arr[i] >= a) && (arr[i]<= b))) {
-            arr.splice(i,1);
-            i--;
-        }
-    }
+// let arr = [5,3,8,1,12,9,16,25,2];
+// function filterRangeInPlace(arr, a, b) {
+//     for (let i = 0; i < arr.length; i++) {
+//         if (!((arr[i] >= a) && (arr[i]<= b))) {
+//             arr.splice(i,1);
+//             i--;
+//         }
+//     }
+// }
+// filterRangeInPlace(arr, 1, 4);
+// console.log(arr); //[3,1,2]
+
+// sort in decreasing order
+let arr = [5, 2, 1, -10, 8, 15, 20];
+arr.sort(compare).reverse();
+function compare(a,b) {
+    if (a > b) return 1;
+    if (a == b) return 0;
+    if (a < b) return -1;
 }
-filterRangeInPlace(arr, 1, 4);
-console.log(arr); //[3,1,2]
+console.log(arr); // 20, 15, 8, 5, 2, 1, -10
 
-
+// Online solution
+// arr.sort((a,b) => b-a);
+// console.log(arr);
 
 
