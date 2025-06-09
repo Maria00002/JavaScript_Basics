@@ -753,14 +753,23 @@ let filtered = filterRange(arr, 1, 4);
 console.log(filtered);
 console.log(arr);
 
-function filterRange(arr, min, max){
-    let filtered = [];
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i] >= min && arr[i] <= max) {
-            filtered.push(arr[i]);
-        }
-    }
-    // console.log(Array.isArray(filtered));
-    return filtered;
+// function filterRange(arr, min, max){
+//     let filtered = [];
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i] >= min && arr[i] <= max) {
+//             filtered.push(arr[i]);
+//         }
+//     }
+//     // console.log(Array.isArray(filtered));
+//     return filtered;
+// }
+
+function filterRange(arr, a, b) {
+    return arr.filter(item => (a <= item && item <= b));
 }
+
+
+
+
+
 
