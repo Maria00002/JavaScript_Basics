@@ -717,22 +717,50 @@
 
 // Tasks
 // Translate border-left-width to borderLeftWidth
-function camelize(str) {
-    // use split to split the string into an array
-    let arr = str.split("-");
-    // console.log(arr);
-    let newArr = arr[0];
-    for (let i = 1; i < arr.length; i++) {
-        newArr += arr[i][0].toUpperCase() + arr[i].slice(1);
+// My solution
+// function camelize(str) {
+//     let arr = str.split("-"); 
+//     let newArr = arr[0];
+//     for (let i = 1; i < arr.length; i++) {
+//         newArr += arr[i][0].toUpperCase() + arr[i].slice(1);
+//     }
+//     return newArr;
+// }
+
+// console.log(camelize("background-color")); // backgroundColor
+// console.log(camelize("list-style-image")); // listStyleImage
+// console.log(camelize("-webkit-transition")); //WebkitTransition
+
+// // Online answer
+// function camelize(str) {
+//     return str
+//         .split("-") //splits 'my-long-word' into array["my","long","word"]
+//         .map( //capitalizes first letters of all array items except the first one
+//             // converts["my","long","word"] into ["my","Long","Word"]
+//             (word,index) => index == 0 ? word : word[0].toUpperCase() + word.slice(1) 
+//         )
+//         .join(""); // joins["my","Long","Word"] into "myLongWord"
+// }
+
+// Filter range
+// Write a function filterRange(arr,a,b) that gets an array arr,
+// looks for elements with values higher or equal to a
+// and lower or equal to b and return a result as an array
+// my solution
+
+let arr = [5, 3, 8, 1];
+let filtered = filterRange(arr, 1, 4);
+console.log(filtered);
+console.log(arr);
+
+function filterRange(arr, min, max){
+    let filtered = [];
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] >= min && arr[i] <= max) {
+            filtered.push(arr[i]);
+        }
     }
-    return newArr;
+    // console.log(Array.isArray(filtered));
+    return filtered;
 }
-
-console.log(camelize("background-color")); // backgroundColor
-console.log(camelize("list-style-image")); // listStyleImage
-console.log(camelize("-webkit-transition")); //WebkitTransition
-
-
-
-
 
