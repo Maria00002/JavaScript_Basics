@@ -512,7 +512,208 @@
 // Task is to find the contiguous subarray of arr with the maximal sum 
 // of items
 
+//// Array methods
+// let arr = ["I","go","home"];
+// delete arr[1];
+// console.log(arr[1]);
+// console.log(arr.length);
+// console.log(arr);
 
+// arr.splice() can insert, remove and replace elements
+// let arr = ["I","study","JavaScript"];
+// arr.splice(1,1); // from index 1 remove 1 element
+// console.log(arr);
+
+// let arr = ["I","study","JavaScript","right","now"];
+// arr.splice(0,3,"Let's","dance"); //remove first 3 elements and replace them
+// console.log(arr);
+
+
+// let arr = ["I","study","JavaScript","right","now"];
+// let removed = arr.splice(0,2);
+// console.log(removed);
+
+// let arr = ["I","study","JavaScript"];
+// arr.splice(2,0,"complex","language");
+// console.log(arr);
+
+// let arr = [1,2,5];
+// arr.splice(-1,0,3,4);
+// console.log(arr);
+
+// arr.slice()
+// let arr = ["t","e","s","t"];
+// console.log(arr.slice(1,3)); // e s
+// console.log(arr.slice(-2)); // s t
+
+
+// arr.concat()
+// let arr = [1,2];
+// console.log(arr.concat([3,4]));
+// console.log(arr);
+// console.log(arr.concat([3,4],[5,6]));
+// console.log(arr);
+// console.log(arr.concat([3,4],5,6));
+// console.log(arr);
+
+// let arr = [1,2];
+
+// let arrayLike = {
+//     0:"something",
+//     length:1
+// };
+// console.log(arr.concat(arrayLike));
+
+// let arr = [1,2];
+// let arrayLike = {
+//     0:"something",
+//     1:"else",
+//     [Symbol.isConcatSpreadable]: true,
+//     length: 2
+// };
+// console.log(arr.concat(arrayLike));
+
+// Iterate: forEach
+// Array.forEeach(function(item, index, array) {
+//     // ... do something with an item
+// });
+
+// ["Bilbo","Grandalf","Nazgul"].forEach(console.log);
+
+// ["Bilbo","Grandalf","Nazgul"].forEach((item, index, array) => {
+//     alert(`${item} is at index ${index} in ${array}`);
+// });
+
+// let arr = [1,0, false, 0];
+// console.log(arr.indexOf(0));
+// console.log(arr.indexOf(false));
+// console.log(arr.indexOf(null));
+// console.log(arr.includes(1));
+
+// let fruits = ["Apple","Orange","Apple"];
+// console.log(fruits.indexOf("Apple"));
+// console.log(fruits.lastIndexOf("Apple")); 
+
+// const arr = [NaN];
+// console.log(arr.indexOf(NaN));
+// console.log(arr.includes(NaN));
+
+// find and findIndex/findLastIndex
+// let users = [
+//     {id: 1, name: "John"},
+//     {id: 2, name: "Pete"},
+//     {id:3, name: "Mary"}
+// ];
+
+// let user = users.find(item => item.id == 1);
+// console.log(user.name);
+
+// let users = [
+//     {id: 1, name: "John"},
+//     {id: 2, name: "Pete"},
+//     {id: 3, name: "Mary"},
+//     {id: 4, name: "John"}
+// ];
+
+// console.log(users.findIndex(user=> user.name =="John"));
+// console.log(users.findLastIndex(user=> user.name =="John"));
+
+
+// filter
+// let users = [
+//     {id: 1, name: "John"},
+//     {id: 2, name: "Pete"},
+//     {id: 3, name: "Mary"},
+//     {id: 4, name: "John"}
+//     ];
+
+// let someUsers = users.filter(item => item.id < 4);
+// console.log(someUsers.length);
+// console.log(someUsers);
+
+// Transform an array
+// Transform and reorder an array
+// let lengths = ["Bilbo","Gandalf","Nazgul"].map(item => item.length);
+// console.log(lengths);
+
+// let arr = [1,2,15];
+// arr.sort();
+// console.log(arr);
+
+// function compareNumeric(a,b) {
+//     if (a > b) return 1;
+//     if (a == b) return 0;
+//     if (a < b) return -1;
+// }
+
+// let arr = [1,2,15];
+// arr.sort(compareNumeric);
+// console.log(arr);
+
+
+// [1,-2,15,2,0,8].sort(function(a,b) {
+//     console.log(a+" <> " +b);
+//     return a-b;
+// });
+
+// let arr = [1,2,15];
+// arr.sort(function(a,b) {return a-b;});
+// console.log(arr);
+
+// let countries = ["Ostereich","Andorra","Vietnam"];
+// console.log(countries.sort((a,b) => a > b ? 1 : -1));
+// console.log(countries.sort((a,b) => a.localeCompare(b)));
+
+// let arr = [1,2,3,4,5];
+// arr.reverse();
+// console.log(arr);
+
+// let names = "Bilbo, Gandalf, Nazgul";
+// let arr = names.split(", ");
+// for (let name of arr) {
+//     console.log(`A message to ${name}.`);
+// }
+
+// let arr = "Bilbo, Gandalf, Nazgul".split(", ", 2);
+// console.log(arr);
+
+// let str = "test";
+// console.log(str.split(""));
+
+// let arr = ["Bilbo","Gandalf","Nazgul"];
+// let str = arr.join(";");
+// console.log(str);
+
+// let arr = [1,2,3,4,5];
+// let result = arr.reduce((sum, current) => sum + current, 0);
+// console.log(result);
+
+// let arr = [];
+// arr.reduce((sum, current) => sun + current, 0);
+
+// console.log(Array.isArray({}));
+// console.log(Array.isArray([]));
+
+let army = {
+    minAge: 18,
+    maxAge: 27,
+    canJoin(user) {
+        return user.age >= this.minAge && user.age < this.maxAge;
+    }
+};
+
+let users = [
+    {age: 16},
+    {age: 20},
+    {age: 23},
+    {age: 30}
+];
+
+let soldiers = users.filter(army.canJoin, army);
+console.log(soldiers);
+console.log(soldiers.length);
+console.log(soldiers[0].age);
+console.log(soldiers[1].age);
 
 
 
