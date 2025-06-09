@@ -831,4 +831,39 @@
 // console.log(sorted);
 // console.log(arr);
 
+// Create an extendable calculator
+// Create a constructor function Calculator that creates "extendable"
+// calculator objects
+// First, implement the method calculate(str) that takes a string in the
+// format "NUMBER operator NUMBER" and returns the result
+// should understand + and -
+// let calc = new Calculator;
+// console.log(calc.calculate("3 + 7")); // 10
+function calculate(str) {
+    let arr = str.split(' ');
+    let operator = arr[1];
+    if (operator == "+") {
+        return Number(arr[0]) + Number(arr[2]);
+    } else if (operator == "-") {
+        return Number(arr[0]) - Number(arr[2]);
+    }
+
+}
+console.log(calculate("3 + 7")); // 10
+console.log(calculate("3 - 7")); // -4
+console.log(calculate("2 + 8")); // 10
+console.log(calculate("1 + 4")); // 5
+console.log(calculate("7 - 2")); // 5 
+
+
+
+
+
+
+
+
+
+
+
+
 
