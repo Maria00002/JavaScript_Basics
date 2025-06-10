@@ -953,7 +953,7 @@
 // console.log(fruits);
 // console.log(moreFruits);
 
-const fruits = ["Strawberry", "Mango"];
+// const fruits = ["Strawberry", "Mango"];
 // const fruitsCopy = [...fruits];
 // console.log(fruitsCopy);
 // const fruitsCopy2 = Array.from(fruits);
@@ -961,8 +961,122 @@ const fruits = ["Strawberry", "Mango"];
 // const fruitsCopy3 = fruits.slice();
 // console.log(fruitsCopy3);
 
-const fruitsAlias = fruits;
-console.log(fruits === fruitsAlias);
-fruits.unshift("Apple","Banana");
-console.log(fruits);
-console.log(fruitsAlias);
+// const fruitsAlias = fruits;
+// console.log(fruits === fruitsAlias);
+// fruits.unshift("Apple","Banana");
+// console.log(fruits);
+// console.log(fruitsAlias);
+
+// sumOfTrupledEvens
+// take in an array
+// For every even number, it will triple it
+// THen it will sum all those even numbers
+// My solution
+
+// function sumOfTripledEvens(arr) {
+//     let sum = 0;
+//     for (let num of arr) {
+//         if (num % 2 === 0) {
+//             let tripleNum = num * 3;
+//             sum += tripleNum;
+//         }
+//     }
+//     return sum;
+// }
+
+// let arr = [0,5,3,8,4,1,6,26,54]; // (0+4+6+26+54)*3
+// let result = sumOfTripledEvens(arr);
+// console.log(result);
+
+// // Online solution
+// function sumOfTripledEvens(array) {
+//     let sum = 0;
+//     for (let i = 0; i < array.length; i++) {
+//         if (array[i] % 2 === 0) {
+//             const tripleEvenNumber = array[i] * 3;
+//             sum += tripleEvenNumber;
+//         }
+//     }
+//     return sum;
+// }
+
+// The map method
+// expects a callback as an argument
+// "I want you to pass another function an as argument to my function"
+
+// function addOne(num) {
+//     return num + 1;
+// }
+// const arr = [1,2,3,4,5];
+// const mappedArr = arr.map(addOne);
+// console.log(arr);
+// console.log(mappedArr);
+
+// const arr = [1,2,3,4,5];
+// const mappedArr = arr.map((num) => num + 1);
+// console.log(mappedArr);
+
+// The filter method
+// iterates over the array and applies the callback function on every item
+// function isOdd(num) {
+//     return num % 2 !== 0;
+// }
+
+// const arr = [1,2,3,4,5];
+// const oddNums = arr.filter(isOdd);
+// console.log(oddNums);
+// console.log(arr);
+
+// The reduce method
+// const arr = [1,2,3,4,5];
+// const productOfAllNums  = arr.reduce((total, currentItem) => {
+//     return total * currentItem;
+// }, 1);
+// console.log(productOfAllNums);
+// console.log(arr);
+
+// const arr = [1,2,3,4,5];
+// console.log(sumOfTripledEvens(arr));
+
+// function sumOfTripledEvens(arr) {
+//     let newArr = arr.filter(isEven).slice();
+//     newArr = newArr.map(tripleNum);
+//     let result = newArr.reduce((sum, currentItem) => {
+//         return sum + currentItem
+//     }, 0);
+//     return result;
+// }
+
+// function isEven(num) {
+//     if (num % 2 == 0) {
+//         return num;
+//     }
+// }
+
+// function tripleNum(num) {
+//     return num * 3;
+// }
+
+// // Solution from online
+// function sumOfTripleEvens2(array) {
+//     return array
+//         .filter((num) => num % 2 === 0)
+//         .map((num) => num * 3)
+//         .reduce((acc, curr) => acc + curr);
+// }
+
+// console.log(sumOfTripleEvens2(arr));
+
+// Test-driven development
+// Test-driven development (TDD) reders to the practice of writing automated
+// test that describe how your code should work before you actually write 
+// the code. 
+
+
+
+
+
+
+
+
+
