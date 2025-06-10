@@ -839,31 +839,130 @@
 // should understand + and -
 // let calc = new Calculator;
 // console.log(calc.calculate("3 + 7")); // 10
-function calculate(str) {
-    let arr = str.split(' ');
-    let operator = arr[1];
-    if (operator == "+") {
-        return Number(arr[0]) + Number(arr[2]);
-    } else if (operator == "-") {
-        return Number(arr[0]) - Number(arr[2]);
-    }
+// function calculate(str) {
+//     let arr = str.split(' ');
+//     let operator = arr[1];
+//     if (operator == "+") {
+//         return Number(arr[0]) + Number(arr[2]);
+//     } else if (operator == "-") {
+//         return Number(arr[0]) - Number(arr[2]);
+//     }
 
-}
-console.log(calculate("3 + 7")); // 10
-console.log(calculate("3 - 7")); // -4
-console.log(calculate("2 + 8")); // 10
-console.log(calculate("1 + 4")); // 5
-console.log(calculate("7 - 2")); // 5 
+// }
+// console.log(calculate("3 + 7")); // 10
+// console.log(calculate("3 - 7")); // -4
+// console.log(calculate("2 + 8")); // 10
+// console.log(calculate("1 + 4")); // 5
+// console.log(calculate("7 - 2")); // 5 
 
+// Some examples of array magic
+// sumOfTripledEvens
+// Take in an array
+// FOr every even number, it will triple it
+// then it will sum all those even numbers
 
+// Array
+// const fruits = ["Apple","Banana"];
+// console.log(fruits.length);
 
+// const fruitsString = fruits.join(", ");
+// console.log(fruitsString);
+// console.log(fruits[0]);
+// console.log(fruits[1]);
+// console.log(fruits[fruits.length -1 ]);
+// console.log(fruits[99]);
 
+// console.log(fruits.indexOf("Banana"));
+// console.log(fruits.includes("Banana"));
+// console.log(fruits.includes("Cherry"));
+// console.log(fruits.indexOf("Banana"));
+// console.log(fruits.indexOf("Cherry"));
 
+// const newLength = fruits.push("Orange");
+// console.log(fruits);
+// console.log(newLength);
 
+// const removedItem = fruits.pop();
+// console.log(fruits);
+// console.log(removedItem);
 
+// const fruits = ["Apple","Banana","Strawberry","Mango","Cherry"];
+// const start = -3;
+// const removedITems = fruits.splice(start);
+// console.log(fruits);
+// console.log(removedITems);
 
+// const start = 2;
+// const removedItems = fruits.splice(start);
+// console.log(fruits);
+// console.log(removedItems);
 
+// const fruits = ["Apple","Banana"];
+// const removedItem = fruits.shift();
+// console.log(fruits);
+// console.log(removedItem);
 
+// const fruits = ["Apple","Strawberry","Cherry","Banana","Mango"];
+// const start = 0;
+// const deleteCount = 3;
+// const removedItems = fruits.splice(start, deleteCount);
 
+// console.log(fruits);
+// console.log(removedItems);
 
+// const fruits = ["Banana","Mango"];
+// const newLength = fruits.unshift("Strawberry");
+// console.log(fruits);
+// console.log(newLength);
 
+// const fruits = ["Strawberry","Banana","Mango"];
+// const start = fruits.indexOf("Banana");
+// const deleteCount = 1;
+// const removedItems = fruits.splice(start, deleteCount);
+// console.log(fruits);
+// console.log(removedItems);
+
+// const fruits = ["Apple","Banana","Strawberry","Mango"];
+// const start = 1;
+// const deleteCount = 2;
+// const removedItems = fruits.splice(start, deleteCount);
+// console.log(fruits);
+// console.log(removedItems);
+
+// const fruits = ["Apple","Banana","Strawberry"];
+// const start = -2;
+// const deleteCount = 2;
+// const removedItems = fruits.splice(start, deleteCount, "Mango","Cherry");
+// console.log(fruits);
+// console.log(removedItems);
+
+// const fruits = ["Apple","Mango","Cherry"];
+// for(const fruit of fruits) {
+//     console.log(fruit);
+// }
+
+// const fruits = ["Apple","Mango","Cherry"];
+// fruits.forEach((item, index, array) => {
+//     console.log(item, index, array);
+// });
+
+// const fruits = ["Apple", "Banana", "Strawberry"];
+// const moreFruits = ["Mango","Cherry"];
+// const combinedFruits = fruits.concat(moreFruits);
+// console.log(combinedFruits);
+// console.log(fruits);
+// console.log(moreFruits);
+
+const fruits = ["Strawberry", "Mango"];
+// const fruitsCopy = [...fruits];
+// console.log(fruitsCopy);
+// const fruitsCopy2 = Array.from(fruits);
+// console.log(fruitsCopy2);
+// const fruitsCopy3 = fruits.slice();
+// console.log(fruitsCopy3);
+
+const fruitsAlias = fruits;
+console.log(fruits === fruitsAlias);
+fruits.unshift("Apple","Banana");
+console.log(fruits);
+console.log(fruitsAlias);
