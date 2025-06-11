@@ -1072,9 +1072,165 @@
 // test that describe how your code should work before you actually write 
 // the code. 
 
+// Assignment
+// Array methods exercises at the end of JavaScript.info
+// TRanslate border-left-width to borderLeftWidth
+// function camelize(str) {
+//     let arr = str.split("-");
+//     for (let i = 1; i < arr.length; i++) {
+//         let capStr = arr[i][0].toUpperCase() + arr[i].slice(1);
+//         arr[i] = capStr;
+//     }
+   
+//     let returnedStr = arr.join("");
+//     return returnedStr;
+// }
+
+// console.log(camelize("background-color")); //backgroundColor
+// console.log(camelize("list-style-image")); //listStyleImage
+// console.log(camelize("-webkit-transtion")); // WebkitTransition
+
+// // Online solution
+// function camelize(str) {
+//     return str
+//         .split("-")
+//         .map((word, index) => index == 0 ? word: word[0].toUpperCase() + word.slice(1) )
+//         .join("");
+// }       
+
+// Filter range
+// function filterRange(arr,a,b) {
+//     return arr.filter((item) => (item >= a && item <= b));
+//     // values hier or equal to a and lower or equal to b and return the result
+// }
+
+// let arr = [5,3,8,1];
+// let filtered = filterRange(arr, 1, 4);
+// console.log(filtered); // 3 1
+// console.log(arr); // 5 3 8 1
 
 
+// Filter range "in place"
+// function filterRangeInPlace(arr, a, b) {
+//     // removes from it all values except those that are between a and b
+//     for (let i = 0; i < arr.length; i++) {
+//         if (!(arr[i] >= a && arr[i] <= b)) {
+//             arr.splice(i,1);
+//             i--;
+//         }
+//     }
 
+// }
+
+// // the function should only modify the array. It should not return anything
+// let arr = [5,3,8,1];
+// filterRangeInPlace(arr, 1, 4);
+// console.log(arr); // 3 1
+
+
+// Sort in decreasing order
+// let arr = [5,2,1,-10,8];
+// function compareNumber(a,b) {
+//     if (a > b) return 1;
+//     else if (a == b) return 0;
+//     else if (a < b) return -1;
+// }
+
+// arr.sort(compareNumber).reverse();
+// console.log(arr); //8 5 2 1 -10
+
+// Copy and sort array
+//arr is an array of strings. want to have a sorted copy of it
+// but keep arr unmodified
+// function copySorted(arr) {
+//     let newArr = arr.slice();
+//     newArr.sort();
+//     return newArr
+// }
+
+// let arr = ["HTML","JavaScript","CSS"];
+// let sorted = copySorted(arr);
+// console.log(sorted); // CSS, HTML, JavaScript
+// console.log(arr); // HTML, JavaScript, css
+
+// Shuffle an array
+// funtion shuffle(array) that shuffles (randomly reorders) elements
+// of the array
+// let arr = [1,2,3];
+// console.log(shuffle(arr)); // 3 2 1
+// console.log(shuffle(arr)); // 2 1 3
+// console.log(shuffle(arr)); // 3 1 2
+// console.log("End of printing");
+
+//my solution that returns a new array and leave arr untouched
+// function shuffle(array) {
+//     let oldArray = array.slice();
+//     let newArray = [];
+//     while(oldArray.length !== 0) {
+//         let length = oldArray.length;
+//         // console.log(length);
+//         let randomIndex = Math.floor(Math.random() * oldArray.length);
+//         newArray.push(oldArray[randomIndex]);
+//         oldArray.splice(randomIndex, 1);
+//         // console.log(newArray);
+//     }
+//     return newArray;    
+// }
+
+// Online solution
+// Counts of appearances for all possible permutations
+// let count = {
+//     "123": 0,
+//     "132": 0,
+//     "213": 0,
+//     "231": 0,
+//     "321": 0,
+//     "312": 0,
+// };
+
+// for (let i = 0; i < 1000000; i++) {
+//     let array = [1,2,3];
+//     shuffle(array);
+//     count[array.join("")]++;
+// }
+
+// for (let key in count) {
+//     console.log(`${key}:${count[key]}`);
+// }
+
+
+// Filter unique array numbers
+// let arr be an array
+// create a function unique(arr) that should return an array with 
+// unique items of arr
+
+// function unique(arr) {
+//     let newArr = [];
+//     for (let i = 0; i < arr.length; i++) {
+//         let decision = Math.random() - 0.5; // range from -0.5 to 0.5
+//         if (decision < 0) {
+//             continue;
+//         } else if (decision >= 0) {
+//             newArr.push(arr[i]);
+//         }
+//     }
+//     return newArr;
+// }
+
+function unique(arr) {
+    let newArr = [];
+    for (let string of arr) {
+        if (newArr.includes(string)) {
+            continue;
+        } else {
+            newArr.push(string);
+        }
+    }
+    return newArr;
+}
+
+let strings = ["Hare","Krishna","Hare","Krishna","Krishna","Krishna","Hare","Hare",":-O"];
+console.log(unique(strings));
 
 
 
