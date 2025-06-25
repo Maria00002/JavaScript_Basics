@@ -252,9 +252,35 @@
 // renders the HTML inside div
 // div.innerHTML = "<span>Hello World!</span>";
 
+// A <p> with red text that says "Hey I'm red!"
+const container = document.querySelector("#container");
+
+const paragraph = document.createElement("p");
+paragraph.textContent = "Hey I'm red!";
+paragraph.style.color = "red";
+container.appendChild(paragraph);
+
+// an <h3< with blue text that says "I'm a blue h3!"
+const h3 = document.createElement("h3");
+h3.textContent = "I'm a blue h3!";
+h3.style.color = "blue";
+container.appendChild(h3);
+
+// a <div> with a black border and pink background color with the 
+// following elements inside of it
+const div = document.createElement("div");
+div.style["border-style"] = "solid";
+div.style["background-color"] = "pink";
+container.appendChild(div);
+// another <h1> that says "I'm in a div"
+
+const h1 = document.createElement("h1");
+h1.textContent = "I'm in a div";
+div.appendChild(h1);
 
 
-
-
+const p = document.createElement("p");
+p.textContent = "ME TOO!"
+div.appendChild(p);
 
 
