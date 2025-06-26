@@ -253,34 +253,185 @@
 // div.innerHTML = "<span>Hello World!</span>";
 
 // A <p> with red text that says "Hey I'm red!"
-const container = document.querySelector("#container");
+// const container = document.querySelector("#container");
 
-const paragraph = document.createElement("p");
-paragraph.textContent = "Hey I'm red!";
-paragraph.style.color = "red";
-container.appendChild(paragraph);
+// const paragraph = document.createElement("p");
+// paragraph.textContent = "Hey I'm red!";
+// paragraph.style.color = "red";
+// container.appendChild(paragraph);
 
-// an <h3< with blue text that says "I'm a blue h3!"
-const h3 = document.createElement("h3");
-h3.textContent = "I'm a blue h3!";
-h3.style.color = "blue";
-container.appendChild(h3);
+// // an <h3< with blue text that says "I'm a blue h3!"
+// const h3 = document.createElement("h3");
+// h3.textContent = "I'm a blue h3!";
+// h3.style.color = "blue";
+// container.appendChild(h3);
 
-// a <div> with a black border and pink background color with the 
-// following elements inside of it
-const div = document.createElement("div");
-div.style["border-style"] = "solid";
-div.style["background-color"] = "pink";
-container.appendChild(div);
-// another <h1> that says "I'm in a div"
+// // a <div> with a black border and pink background color with the 
+// // following elements inside of it
+// const div = document.createElement("div");
+// div.style["border-style"] = "solid";
+// div.style["background-color"] = "pink";
+// container.appendChild(div);
+// // another <h1> that says "I'm in a div"
 
-const h1 = document.createElement("h1");
-h1.textContent = "I'm in a div";
-div.appendChild(h1);
+// const h1 = document.createElement("h1");
+// h1.textContent = "I'm in a div";
+// div.appendChild(h1);
 
 
-const p = document.createElement("p");
-p.textContent = "ME TOO!"
-div.appendChild(p);
+// const p = document.createElement("p");
+// p.textContent = "ME TOO!"
+// div.appendChild(p);
+
+
+// Events
+// const btn = document.querySelector("#btn");
+// btn.onclick = () => alert("Hello World");
+
+// const btn = document.querySelector("#btn");
+// btn.addEventListener("click", () => {
+//     alert("Hello World");
+// })
+
+// METHOD 1
+// function alertFunction() {
+//     alert("YAY! YOU DID IT!");
+// }
+
+
+// METHODS 2 & 3
+// function alertFunction() {
+//     alert("YAY! YOU DID IT!");
+// }
+
+// const btn = document.querySelector("#btn");
+
+// // METHOD 2
+// btn.onclick = alertFunction;
+
+// // METHOD 3
+// btn.addEventListener("click", alertFunction);
+
+// btn.addEventListener("click", function (e) {
+//     console.log(e);
+// });
+
+// btn.addEventListener("click", function (e) {
+//     console.log(e.target);
+// });
+
+// btn.addEventListener("click", function (e) {
+//     e.target.style.background = "blue";
+// });
+
+// button is a node list. IT looks and acts much like an array
+// const buttons = document.querySelectorAll("button");
+
+// // we use the .forEach method to iterate through each button
+// buttons.forEach((button) => {
+//     button.addEventListener("click", () => {
+//         alert(button.id);
+//     });
+// });
+
+
+// const container = document.querySelector("#container");
+
+// const display = container.firstElementChild;
+// console.log(display);
+
+// const controls = document.querySelector(".controls");
+
+// const display = controls.previousElementSibling;
+// console.log(display);
+
+// const div = document.createElement("div");
+
+// div.style.color = "blue";
+// div.textContent = "Showing Something";
+// container.insertBefore(div, display);
+
+// div.style.cssText = "color: blue; background: yellow;";
+
+// div.setAttribute("style","color: blue; background: white;");
+// console.log(div);
+// div.setAttribute("id","theDiv");
+// console.log(div);
+
+// console.log(div.getAttribute("id"));
+// div.removeAttribute("id");
+// console.log(div);
+
+// console.log(div);
+// div.classList.add("new");
+
+// div.classList.remove("new");
+// div.classList.add("active");
+// div.classList.toggle("active");
+
+// div.textContent = "Hello World!";
+
+// const container = document.querySelector("#container");
+
+// const content = document.createElement("div");
+// content.classList.add("content");
+// content.textContent = "This is the glorious text-content!";
+
+// container.appendChild(content);
+// console.log(content);
+
+// Events
+// specificy function attributes directly on your HTML elements
+// set properties in the form of on<eventType> such as onclick or onmousedown
+// attach event listeners to the DOM nodes
+
+// const btn = document.querySelector("#btn");
+// btn.onclick =() => alert("Hello World");
+
+// const btn = document.querySelector("#btn");
+// btn.addEventListener("click", () => {
+//     alert("Hello World");
+// });
+
+// function alertFunction() {
+//     alert("YAY! YOU DID IT!");
+// }
+
+// function alertFunction() {
+//     alert("YAY! YOU DID IT!");
+// }
+
+// const btn = document.querySelector("#btn");
+
+// // METHOD 2
+// // btn.onclick = alertFunction;
+
+// // METHOD 3
+// btn.addEventListener("click", alertFunction);
+
+// btn,addEventListener("click", function(e){
+//     e.target.style.background = "blue";
+// });
+
+// const buttons =document.querySelectorAll("button");
+
+// buttons.forEach((button) => {
+//     button.addEventListener("click", () => {
+//         alert(button.id);
+//     });
+// });
+
+// Event objects
+// the target property of the event object is always a reference to the 
+// element the event occurred upon
+// e/evt/event is most commonly used by developers
+
+
+
+
+
+
+
+
 
 
