@@ -426,8 +426,12 @@
 // element the event occurred upon
 // e/evt/event is most commonly used by developers
 
+// HTML DOM Events
+// In HTML onclick is the event listener, myFunction is the event handler
+<button onclick="myFunction()">Click me</button>
 
-
+// In JavaScript click is the event, myFunction is the event handler
+button.addEventListener("click",myFunction);
 
 
 
