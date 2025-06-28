@@ -428,11 +428,18 @@
 
 // HTML DOM Events
 // In HTML onclick is the event listener, myFunction is the event handler
-<button onclick="myFunction()">Click me</button>
+/* <button onclick="myFunction()">Click me</button>
 
 // In JavaScript click is the event, myFunction is the event handler
 button.addEventListener("click",myFunction);
+ */
 
+// Testing parentNode.insertBefore
+const container = document.querySelector("#container");
+
+const content = document.createElement("div");
+content.textContent = "This is some text";
+container.insertBefore(content, two); 
 
 
 
