@@ -442,6 +442,28 @@ content.textContent = "This is some text";
 container.insertBefore(content, two); 
 
 
+// console.log(container.removeChild(content)); // return "this is some text"
+
+// const div = document.createElement("div");
+
+content.style.color = "blue";
+
+content.style.cssText = "color: blue; background: white;";
+
+content.setAttribute("style","color: blue; background: yellow;");
+
+// Need to use camelCase with dot notation or bracket notation
+
+content.style.backgroundColor = "Pink";
+content.style["background-color"] = "green";
+content.style["backgroundColor"] = "white";
+
+content.setAttribute("id","theDiv");
+
+let result = content.getAttribute("id"); //theDiv
+// console.log(result);
+
+content.removeAttribute("id");
 
 
 
