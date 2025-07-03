@@ -484,35 +484,126 @@ button.addEventListener("click",myFunction);
 
 // Exercise
 // 1 a <p> with red text that says "Hey I'm red!"
-const container = document.querySelector("#container");
+// const container = document.querySelector("#container");
 
-const p = document.createElement("p");
-p.style.color = "red";
-p.textContent = "Hey I'm red!";
-container.appendChild(p);
+// const p = document.createElement("p");
+// p.style.color = "red";
+// p.textContent = "Hey I'm red!";
+// container.appendChild(p);
 
-// 2 an <h3> with blue text that says "I'm a blue h3!"
-const h3 = document.createElement("h3");
-h3.style.color = "blue";
-h3.textContent = "I'm a blue h3!";
-container.appendChild(h3);
+// // 2 an <h3> with blue text that says "I'm a blue h3!"
+// const h3 = document.createElement("h3");
+// h3.style.color = "blue";
+// h3.textContent = "I'm a blue h3!";
+// container.appendChild(h3);
 
-// 3 a <div> with a black border and pink background color with the 
-// following elements inside of it 
-const div = document.createElement("div");
-div.style.borderStyle = "solid";
-div.style.backgroundColor = "pink";
+// // 3 a <div> with a black border and pink background color with the 
+// // following elements inside of it 
+// const div = document.createElement("div");
+// div.style.borderStyle = "solid";
+// div.style.backgroundColor = "pink";
+// // another <h1> that says "I'm in a div"
+// const h1 = document.createElement("h1");
+// h1.textContent = "I'm in a div";
+
+// // a <p> that says "ME TOO!"
+// const p2 = document.createElement("p");
+// p2.textContent = "ME TOO!";
+
+// div.appendChild(h1);
+// div.appendChild(p2);
+// container.appendChild(div);
+
+// a <p> with red text that says "Hey I'm red!"
+// const container = document.querySelector("#container");
+
+// const p = document.createElement("p");
+// p.textContent = "Hey I'm red!";
+// p.style.color = "red";
+// container.appendChild(p);
+
+// // an <h3> with blue text that says "I'm a blue h3!"
+// const h3 = document.createElement("h3");
+// h3.textContent = "I'm a blue h3!";
+// h3.style.color = "blue";
+// container.appendChild(h3);
+
+// a <div> with a black border and pink background color with the following elements
 // another <h1> that says "I'm in a div"
-const h1 = document.createElement("h1");
-h1.textContent = "I'm in a div";
-
 // a <p> that says "ME TOO!"
-const p2 = document.createElement("p");
-p2.textContent = "ME TOO!";
+// const div = document.createElement("div");
+// div.setAttribute("style","border-style: solid; background: pink;");
+// const h1 = document.createElement("h1");
+// h1.textContent = "I'm in a div";
+// const p = document.createElement("p");
+// p.textContent = "ME TOO!";
+// div.appendChild(h1);
+// div.appendChild(p);
+// container.appendChild(div);
 
-div.appendChild(h1);
-div.appendChild(p2);
-container.appendChild(div);
+
+// Events
+// 1 specify function attributes 
+// 2 set properties in the form of on<eventType> such as
+// onclick or onmousedown
+// 3 attach event listener to the DOM nodes
+
+// Method 2
+// const btn = document.querySelector("#btn");
+// btn.onclick = () => alert("Hello World");
+
+// Method 3
+// const btn = document.querySelector("#btn");
+// btn.addEventListener("click", () => {
+//     alert("Hello World");
+// });
+
+// function alertFunction() {
+//     alert("YAY! YOU DID IT!");
+// }
+
+// function alertFunction() {
+//     alert("YAY! YOU DID IT!");
+// }
+
+// const btn = document.querySelector("#btn");
+
+// // btn.onclick = alertFunction;
+
+// btn.addEventListener("click", alertFunction);
+// btn.addEventListener("click", function (e){
+//     console.log(e.target.style.background = "blue");
+// });
+
+// const buttons = document.querySelectorAll("button");
+
+// buttons.forEach((button) => {
+//     button.addEventListener("click", () => {
+//         alert(button.id);
+//     });
+// });
+
+// Assignment
+
+// MDN's Active Learning sections on DOM manipulation
+// const link = document.querySelector("a");
+// link.textContent = "Mozilla Developer Network";
+// link.href = "https://developer.mozilla.org";
+// const sect = document.querySelector("section");
+
+// const para = document.createElement("p");
+// para.textContent = "We hope you enjoyed the ride.";
+
+// sect.appendChild(para);
+
+// const text = document.createTextNode(
+//     " - the premier source for web development knowledge."
+// );
+// const linkPara = document.querySelector("p");
+// linkPara.appendChild(text);
+
+
+
 
 
 
