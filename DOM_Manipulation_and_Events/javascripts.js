@@ -599,12 +599,19 @@ sect.appendChild(para);
 const text = document.createTextNode(
     " - the premier source for web development knowledge."
 );
+
 const linkPara = document.querySelector("p");
 linkPara.appendChild(text);
 
+// Moving and removing elements
 
+sect.appendChild(linkPara);
 
+// sect.removeChild(linkPara);
 
+// linkPara.remove();
+
+linkPara.parentNode.removeChild(linkPara);
 
 
 
