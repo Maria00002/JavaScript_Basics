@@ -613,6 +613,34 @@ sect.appendChild(linkPara);
 
 linkPara.parentNode.removeChild(linkPara);
 
+// Manipulating styles
+// console.log(Document.styleSheets);
+
+// para.style.color = "white";
+// para.style.backgroundColor = "black";
+// para.style.padding = "10px";
+// para.style.width = "250px";
+// para.style.textAlign = "center";
+
+// para.setAttribute("class","highlight");
+
+// Active learning: A dynamic shopping list
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
