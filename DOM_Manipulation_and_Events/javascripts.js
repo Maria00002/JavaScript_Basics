@@ -589,29 +589,29 @@ button.addEventListener("click",myFunction);
 // const link = document.querySelector("a");
 // link.textContent = "Mozilla Developer Network";
 // link.href = "https://developer.mozilla.org";
-const sect = document.querySelector("section");
+// const sect = document.querySelector("section");
 
-const para = document.createElement("p");
-para.textContent = "We hope you enjoyed the ride.";
+// const para = document.createElement("p");
+// para.textContent = "We hope you enjoyed the ride.";
 
-sect.appendChild(para);
+// sect.appendChild(para);
 
-const text = document.createTextNode(
-    " - the premier source for web development knowledge."
-);
+// const text = document.createTextNode(
+//     " - the premier source for web development knowledge."
+// );
 
-const linkPara = document.querySelector("p");
-linkPara.appendChild(text);
+// const linkPara = document.querySelector("p");
+// linkPara.appendChild(text);
 
-// Moving and removing elements
+// // Moving and removing elements
 
-sect.appendChild(linkPara);
+// sect.appendChild(linkPara);
 
-// sect.removeChild(linkPara);
+// // sect.removeChild(linkPara);
 
-// linkPara.remove();
+// // linkPara.remove();
 
-linkPara.parentNode.removeChild(linkPara);
+// linkPara.parentNode.removeChild(linkPara);
 
 // Manipulating styles
 // console.log(Document.styleSheets);
@@ -627,13 +627,49 @@ linkPara.parentNode.removeChild(linkPara);
 // Active learning: A dynamic shopping list
 
 
+// JavaScript Events
+// let btn = document.querySelector("#btn");
 
+// function handleClick() {
+//     alert("It was clicked!");
+// }
 
+// btn.addEventListener("click", handleClick);
 
+// btn.addEventListener("click", function() {
+//     alert("It was clicked!");
+// });
 
+// btn.addEventListener("click", () => {
+//     alert("It was clicked");
+// });
 
+// Event bubbling
+// Event capturing
+// DOM Level 2 Event flow: event bubbling -> acutal target -> event capturing
 
+// Event object 
+let btn = document.querySelector("#btn");
 
+// btn.addEventListener("click", function(event){
+//     console.log(event.type);
+// });
+
+// let link = document.querySelector('a');
+
+// link.addEventListener("click", function(event) {
+//     console.log("clicked");
+//     event.preventDefault();
+// });
+
+btn.addEventListener("click", function(event) {
+    console.log("The button was clicked!");
+    event.stopPropagation();
+});
+
+document.body.addEventListener("click",function(event) {
+    console.log("The body was clicked!");
+})
 
 
 
