@@ -676,42 +676,120 @@ button.addEventListener("click",myFunction);
 // DOMContentLoaded, load, beforeunload, unload
 
 
-document.addEventListener("DOMContentLoaded", () => {
-    // handle DOMContentLoaded event
+// document.addEventListener("DOMContentLoaded", () => {
+//     // handle DOMContentLoaded event
+// });
+
+
+// document.addEventListener("load", () => {
+//     // handle Load event
+// });
+
+// document.addEventListener("beforeunload",() => {
+//     // handle beforeunLoad event
+// });
+
+// document.addEventListener("unload",()=> {
+//     // handle unLoad event
+// });
+
+
+
+// addEventListener("DOMContentLoaded", (event) => {
+//     console.log("The DOM is fully loaded.");
+// });
+
+// addEventListener("load", (event) => {
+//     // handle Load event
+//     console.log("The page is fully loaded.");
+// });
+
+// addEventListener("beforeunload", (event) => {
+//     event.preventDefault();
+//     event.returnValue = '';
+// });
+
+// addEventListener("unload",(event)=> {
+//     // send analytic data
+// });
+
+// JavaScript Mouse Events
+// mousedown -> mouseup -> click
+// dblclick event: mousedown -> mouseup -> click -> mousedown -> mouseup
+// -> click -> dblclick
+// mousemove
+// element.onmousemove = mouseMoveEventHandler;
+// // Later no longer use
+// element.onmousemove = null;
+
+// mouseover/mouseout
+// mouseover fires when the nouse cursor is outside of the element and then 
+// moves inside the boundaries of the element
+
+// mouseout fire when the nouse cursor is over an alement and then moves 
+// to another element
+
+// mouseenter/mouseleave
+// mouseenter fires when the mouse cursor is outside of an element 
+// and then moves inside the boudaries of the element
+// mouseleave fires when the mouse cursor is over an element and then
+// moves to the outside of the element's boundaries
+
+// let btn = document.querySelector("#btn");
+
+// btn.addEventListener("click",(event) => {
+//     console.log("clicked");
+// });
+
+// btn.addEventListener("contextmenu", (e) => {
+//     e.preventDefault();
+// });
+
+// btn.addEventListener("mouseup", (e) => {
+//     let msg = document.querySelector("#message");
+//     switch(e.button) {
+//         case 0:
+//             msg.textContent = "Left mouse button clicked.";
+//             break;
+//         case 1:
+//             msg.textContent = "Middle mouse button clicked.";
+//             break;
+//         case 2:
+//             msg.textContent = "Right mouse button clicked.";
+//             break;
+//         default:
+//             msg.textContent = `Unknown mouse button code: ${event.button}`;
+//     }
+// });
+
+// Modifier keys
+// let btnKeys = document.querySelector("#btnKeys");
+
+// btnKeys.addEventListener("click", (e) => {
+//     let keys = [];
+
+//     if (e.shiftKey) keys.push("shift");
+//     if (e.ctrlKey) keys.push("ctrl");
+//     if (e.altKey) keys.push("alt");
+//     if (e.metaKey) keys.push("meta");
+
+//     let msg = document.querySelector("#messageKeys");
+//     msg.textContent = `Keys: ${keys.join("+")}`;
+// });
+
+// Getting Screen Coordinates
+let track = document.querySelector("#track");
+track.addEventListener("mousemove", (e) => {
+    let log = document.querySelector("#log");
+    log.innerText =`
+    Screen X/Y: (${e.screenX}, ${e.screenY})
+    Client X/Y: (${e.clientX}, ${e.clientY})`
 });
 
 
-document.addEventListener("load", () => {
-    // handle Load event
-});
-
-document.addEventListener("beforeunload",() => {
-    // handle beforeunLoad event
-});
-
-document.addEventListener("unload",()=> {
-    // handle unLoad event
-});
 
 
 
-addEventListener("DOMContentLoaded", (event) => {
-    console.log("The DOM is fully loaded.");
-});
-
-addEventListener("load", (event) => {
-    // handle Load event
-    console.log("The page is fully loaded.");
-});
-
-addEventListener("beforeunload", (event) => {
-    event.preventDefault();
-    event.returnValue = '';
-});
-
-addEventListener("unload",(event)=> {
-    // send analytic data
-});
 
 
 
