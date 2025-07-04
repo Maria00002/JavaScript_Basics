@@ -649,7 +649,7 @@ button.addEventListener("click",myFunction);
 // DOM Level 2 Event flow: event bubbling -> acutal target -> event capturing
 
 // Event object 
-let btn = document.querySelector("#btn");
+// let btn = document.querySelector("#btn");
 
 // btn.addEventListener("click", function(event){
 //     console.log(event.type);
@@ -662,14 +662,57 @@ let btn = document.querySelector("#btn");
 //     event.preventDefault();
 // });
 
-btn.addEventListener("click", function(event) {
-    console.log("The button was clicked!");
-    event.stopPropagation();
+// btn.addEventListener("click", function(event) {
+//     console.log("The button was clicked!");
+//     event.stopPropagation();
+// });
+
+// document.body.addEventListener("click",function(event) {
+//     console.log("The body was clicked!");
+// })
+
+// Page load events
+// JavaScript Page Load Events
+// DOMContentLoaded, load, beforeunload, unload
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    // handle DOMContentLoaded event
 });
 
-document.body.addEventListener("click",function(event) {
-    console.log("The body was clicked!");
-})
+
+document.addEventListener("load", () => {
+    // handle Load event
+});
+
+document.addEventListener("beforeunload",() => {
+    // handle beforeunLoad event
+});
+
+document.addEventListener("unload",()=> {
+    // handle unLoad event
+});
+
+
+
+addEventListener("DOMContentLoaded", (event) => {
+    console.log("The DOM is fully loaded.");
+});
+
+addEventListener("load", (event) => {
+    // handle Load event
+    console.log("The page is fully loaded.");
+});
+
+addEventListener("beforeunload", (event) => {
+    event.preventDefault();
+    event.returnValue = '';
+});
+
+addEventListener("unload",(event)=> {
+    // send analytic data
+});
+
 
 
 
