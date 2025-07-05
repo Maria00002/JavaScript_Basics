@@ -788,6 +788,8 @@ track.addEventListener("mousemove", (e) => {
 
 // JavaScript Keyboard Events
 
+// Event delegation
+
 
 
 
