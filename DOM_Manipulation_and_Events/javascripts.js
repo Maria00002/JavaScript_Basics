@@ -833,23 +833,46 @@ button.addEventListener("click",myFunction);
 // });
 
 
-let menu = document.querySelector("#menu");
+// let menu = document.querySelector("#menu");
 
-menu.addEventListener("click",(event) => {
-    let target = event.target;
+// menu.addEventListener("click",(event) => {
+//     let target = event.target;
 
-    switch(target.id) {
-        case 'home':
-            console.log("Home menu item was clicked");
-            break;
-        case "dashboard":
-            console.log("Dashboard menu item was clicked");
-            break;
-        case "report":
-            console.log("Report menu item was clicked");
-            break;
-    }
-})
+//     switch(target.id) {
+//         case 'home':
+//             console.log("Home menu item was clicked");
+//             break;
+//         case "dashboard":
+//             console.log("Dashboard menu item was clicked");
+//             break;
+//         case "report":
+//             console.log("Report menu item was clicked");
+//             break;
+//     }
+// });
+
+// JavaScript dispatchEvent
+// Event constructor and dispatchEvent() method
+// To generate an event programmatically, follow those steps:
+// First create a new Event object using Event constructor
+// Then, trigger the event using element.dispatchEvent() method
+
+// Event constructor
+// let event = new Event(type, [,options]);
+
+
+// by default, the options object is {bubbles: false, cancelable: false}
+
+// let clickEvent = new Event("click");
+// Element.dispatchEvent(event);
+
+let btn = document.querySelector(".btn");
+btn.addEventListener("click", function() {
+    alert("Mouse Clicked");
+});
+
+let clickEvent = new Event("click");
+btn.dispatchEvent(clickEvent);
 
 
 
