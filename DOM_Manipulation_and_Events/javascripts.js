@@ -778,15 +778,51 @@ button.addEventListener("click",myFunction);
 // });
 
 // Getting Screen Coordinates
-let track = document.querySelector("#track");
-track.addEventListener("mousemove", (e) => {
-    let log = document.querySelector("#log");
-    log.innerText =`
-    Screen X/Y: (${e.screenX}, ${e.screenY})
-    Client X/Y: (${e.clientX}, ${e.clientY})`
-});
+// let track = document.querySelector("#track");
+// track.addEventListener("mousemove", (e) => {
+//     let log = document.querySelector("#log");
+//     log.innerText =`
+//     Screen X/Y: (${e.screenX}, ${e.screenY})
+//     Client X/Y: (${e.clientX}, ${e.clientY})`
+// });
 
 // JavaScript Keyboard Events
+// how to work iwht JavaScript keyboard events
+// including keydown, keypress, and keyup
+// keydown - fires when you press a key and fires repeatedly while you're
+// holding down the key
+// keyup- fires when you release a key on the keyboard
+// keypress - fires when you press a character keyboard like a,b,c keypress
+// also fires repeatedly while you hold down the key on the keyboard
+// let msg = document.getElementById("#message");
+
+// msg.addEventListener("keydown", (event) => {
+//     // handle keydown;
+// });
+
+// msg.addEventListener("keypress",(event) => {
+//     // handle keypress
+// });
+
+// msg.addEventListener("keyup", (event) => {
+//     // handle keyup
+// });
+
+// let textBox = document.getElementById("message");
+// textBox.addEventListener("keydown",(event) => {
+//     console.log(`key=${event.key},code=${event.code}`);
+// });
+
+
+
+
+
+
+
+
+
+
+
 
 // Event delegation
 
