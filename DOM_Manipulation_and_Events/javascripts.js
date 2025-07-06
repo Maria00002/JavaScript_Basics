@@ -866,18 +866,77 @@ button.addEventListener("click",myFunction);
 // let clickEvent = new Event("click");
 // Element.dispatchEvent(event);
 
-let btn = document.querySelector(".btn");
-btn.addEventListener("click", function() {
-    alert("Mouse Clicked");
+// let btn = document.querySelector(".btn");
+// btn.addEventListener("click", function() {
+//     alert("Mouse Clicked");
+// });
+
+// let clickEvent = new Event("click");
+// btn.dispatchEvent(clickEvent);
+
+// JavaScript Custom Events
+// function highlight(elem, callback) {
+//     const bgColor = "yellow";
+//     elem.style.backgroundColor = bgColor;
+
+//     if(callback && typeof callback === "function") {
+//         callback(elem);
+//     }
+// }
+
+// let note = document.querySelector(".note");
+// function addBorder(elem) {
+//     elem.style.border = "solid 1px red";
+// }
+
+// highlight(note, addBorder);
+
+// TO create a custom event, you use the CustomEvent() cosntructor
+// let event = new CustomEvent(eventType, options);
+// CustomEvent() has two parrameters
+// eventType is a string that represents the name of the event
+// options is an object has the detail property that contains any custom 
+// inforamtion about the event
+
+// let event = new CustomEvent("highlight", {
+//     detail: {backgroundCOlor: "yellow"}
+// });
+
+// domElement.dispatchEvent(event);
+
+// elem.dispatchEvent(event);
+
+function highlight(elem) {
+    const bgColor = "yellow";
+    elem.style.backgroundColor = bgColor;
+
+    // create the event
+    let event = new CustomEvent("highlight", {
+        detail: {
+            backgroundColor: bgColor
+        }
+    });
+    // dispatch the event
+    elem.dispatchEvent(event);
+}
+
+// Select the div element
+let div = document.querySelector(".note");
+
+// Add border style
+function addBorder(elem) {
+    elem.style.border = 'solid 1px red';
+}
+
+// Listen to the highlight event
+div.addEventListener("highlight", function(e) {
+    addBorder(this);
+
+    // examine the background
+    console.log(e.detail);
 });
 
-let clickEvent = new Event("click");
-btn.dispatchEvent(clickEvent);
-
-
-
-
-
+highlight(div);
 
 
 
