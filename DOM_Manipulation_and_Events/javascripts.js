@@ -938,7 +938,7 @@ div.addEventListener("highlight", function(e) {
 
 highlight(div);
 
-
+// Finishing reading all the documents
 
 
 
