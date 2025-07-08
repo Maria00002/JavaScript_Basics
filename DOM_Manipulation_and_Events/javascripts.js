@@ -906,66 +906,123 @@ button.addEventListener("click",myFunction);
 
 // elem.dispatchEvent(event);
 
-function highlight(elem) {
-    const bgColor = "yellow";
-    elem.style.backgroundColor = bgColor;
+// function highlight(elem) {
+//     const bgColor = "yellow";
+//     elem.style.backgroundColor = bgColor;
 
-    // create the event
-    let event = new CustomEvent("highlight", {
-        detail: {
-            backgroundColor: bgColor
-        }
-    });
-    // dispatch the event
-    elem.dispatchEvent(event);
-}
+//     // create the event
+//     let event = new CustomEvent("highlight", {
+//         detail: {
+//             backgroundColor: bgColor
+//         }
+//     });
+//     // dispatch the event
+//     elem.dispatchEvent(event);
+// }
 
-// Select the div element
-let div = document.querySelector(".note");
+// // Select the div element
+// let div = document.querySelector(".note");
 
-// Add border style
-function addBorder(elem) {
-    elem.style.border = 'solid 1px red';
-}
+// // Add border style
+// function addBorder(elem) {
+//     elem.style.border = 'solid 1px red';
+// }
 
-// Listen to the highlight event
-div.addEventListener("highlight", function(e) {
-    addBorder(this);
+// // Listen to the highlight event
+// div.addEventListener("highlight", function(e) {
+//     addBorder(this);
 
-    // examine the background
-    console.log(e.detail);
-});
+//     // examine the background
+//     console.log(e.detail);
+// });
 
-highlight(div);
-
-// Finishing reading all the documents
+// highlight(div);
 
 
+// const container = document.querySelector("#container");
+
+// const display = container.firstElementChild;
+// console.log(display);
+
+const div = document.createElement("div");
+
+// div.style.color = "blue";
+
+// div.style.cssText = "color:blue;background: white";
+
+// div.setAttribute("style","color:blue; background: white;");
+
+// div.style.background-color;
+// div.style.backgroundColor;
+// div.style["background-color"];
+// div.style["backgroundColor"];
+
+// div.setAttribute("id","theDiv");
+// div.getAttribute("id");
+// div.removeAttribute("id");
+
+// div.classList.add("new");
+// console.log(div);
+// div.classList.remove("new");
+// console.log(div);
+// div.classList.toggle("active");
+// console.log(div);
+
+// div.textContent = "Hello World!";
+
+// const container = document.querySelector("#container");
+
+// const content = document.createElement("div");
+// content.classList.add("content");
+// content.textContent = "This is the glorious text-content!";
+
+// container.appendChild(content);
+
+// const btn = document.querySelector("#btn");
+// btn.onclick = () => alert("Hello World");
+// btn.addEventListener("click", () => {
+//     alert("Hello World");
+// });
+
+// function alertFunction() {
+//     alert("Yay");
+// }
+
+// btn.onclick = alertFunction;
+
+// btn.addEventListener("click", alertFunction);
+
+// const btn = document.querySelector("#btn");
+// btn.onclick = () => alert("Hello World");
+// btn.addEventListener("click", () => {
+//     alert("Hello World!");
+// });
+
+// function alertFunction() {
+//     alert("Yay");
+// }
+
+// btn.onclick = alertFunction;
+
+// btn.addEventListener("click", alertFunction);
+
+// btn.addEventListener("click", function(e) {
+//     e.target.style.background = "blue";
+// });
+
+// const buttons = document.querySelectorAll("button");
+
+// buttons.forEach((button) => {
+//     button.addEventListener("click", () => {
+//         alert(button.id);
+//     });
+// });
 
 
+// Active learning: Basic DOM manipulation
 
 
-
-
-
-
-
-
-
-
-
-
-
-// Event delegation
-
-
-
-
-
-
-
-
-
+// Eloquent JS- DOM
 
 
 
