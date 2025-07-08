@@ -1024,7 +1024,7 @@ const div = document.createElement("div");
 
 // Eloquent JS- DOM
 
-
+// Eloquent JS - Handling Events
 
 
 
