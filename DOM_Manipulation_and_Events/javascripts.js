@@ -1099,4 +1099,4 @@ document.body.addEventListener("click",function(event) {
 
 // Plain JavaScript
 
-
+// W3Schools article on DOM
