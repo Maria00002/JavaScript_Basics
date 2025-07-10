@@ -662,14 +662,15 @@ button.addEventListener("click",myFunction);
 //     event.preventDefault();
 // });
 
-// btn.addEventListener("click", function(event) {
-//     console.log("The button was clicked!");
-//     event.stopPropagation();
-// });
+let btn = document.querySelector("#btn");
+btn.addEventListener("click", function(event) {
+    console.log("The button was clicked!");
+    event.stopPropagation();
+});
 
-// document.body.addEventListener("click",function(event) {
-//     console.log("The body was clicked!");
-// })
+document.body.addEventListener("click",function(event) {
+    console.log("The body was clicked!");
+})
 
 // Page load events
 // JavaScript Page Load Events
@@ -944,7 +945,7 @@ button.addEventListener("click",myFunction);
 // const display = container.firstElementChild;
 // console.log(display);
 
-const div = document.createElement("div");
+// const div = document.createElement("div");
 
 // div.style.color = "blue";
 
@@ -1020,11 +1021,82 @@ const div = document.createElement("div");
 
 
 // Active learning: Basic DOM manipulation
+// const link = document.querySelector("a");
+// link.textContent = "Mozilla Developer Network";
+// link.href = "https://developer.mozilla.org";
+
+// const sect = document.querySelector("section");
+// const para = document.createElement("p");
+// para.textContent = "We hope you enjopyed the ride.";
+
+// sect.appendChild(para);
+
+// const text = document.createTextNode(
+//     " - the premier source for web development knowledge."
+// );
+
+// const linkPara = document.querySelector("p");
+// linkPara.appendChild(text);
+
+// sect.appendChild(linkPara);
+
+// sect.removeChild(linkPara);
+// linkPara.remove();
+// linkPara.parentNode.removeChild(linkPara);
+
+// console.log(document.styleSheets);
+
+// para.style.color = "white";
+// para.style.backgroundColor = "black";
+// para.style.padding = "10px";
+// para.style.width = "250px";
+// para.style.textAlign = "center";
+
+// para.setAttribute("id","highlight");
+
+// Active learning: A dynamic shopping list
+// const ul = document.querySelector("ul");
+// const input = document.querySelector("input");
+// const button = document.querySelector("button");
+
+// button.addEventListener("click", action);
+
+// function action() {
+//     const myItem = input.value;
+//     input.value = "";
+
+//     const li = document.createElement("li");
+//     const span = document.createElement("span");
+//     const btn = document.createElement("button");
+
+//     li.appendChild(span);
+//     li.appendChild(btn);
+
+//     span.textContent = myItem;
+//     btn.textContent = "Delete";
+
+//     ul.appendChild(li);
+
+//     btn.addEventListener("click", () => {
+//         li.remove();
+//     });
+
+//     ul.focus();
+// }
+
+
+
+
+
+
+
+
 
 
 // Eloquent JS- DOM
 
 // Eloquent JS - Handling Events
 
+// Plain JavaScript
 
 
