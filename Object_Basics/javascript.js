@@ -228,6 +228,143 @@
 // };
 
 
+// JavaScript object basics
+// const person = {
+//     name: ["Bob","Smith"],
+//     age: 32,
+//     bio: function () {
+//         console.log(`${this.name[0]} ${this.name[1]} is ${this.age} years old.`)
+//     },
+//     introduceSelf: function () {
+//         console.log(`Hi I'm ${this.name[0]}.`);
+//     },
+// };
+
+
+// const person = {
+//     // name: ["Bob","Smith"],
+//     name : {
+//         first: "Bob",
+//         last: "Smith",
+//     },
+//     age: 32,
+//     bio() {
+//         console.log(`${this.name[0]} ${this.name[1]} is ${this.age} years old.`)
+//     },
+//     introduceSelf() {
+//         console.log(`Hi I'm ${this.name[0]}.`);
+//     },
+// };
+
+
+// console.log(person.name.first);
+// console.log(person.name.last);
+// console.log(person.age);
+// console.log(person["name"]["first"]);
+// console.log(person["name"]["last"]);
+// console.log(person["age"]);
+// person.bio();
+// person.introduceSelf();
+
+// const person = {
+//     name: ["Bob", "Smith"],
+//     age: 32,
+// };
+
+// function logProperty(propertyName) {
+//     console.log(person[propertyName]);
+// }
+
+// logProperty("name");
+// logProperty("age");
+
+// const person = {
+//     name : {
+//         first: "Bob",
+//         last: "Smith",
+//     },
+//     age: 32,
+// };
+
+// person.age = 45;
+// person["name"]["last"] = "Cratchit";
+
+// console.log(person.age);
+// console.log(person["name"]["last"]);
+
+// person["eyes"] = "hazel";
+// person.farewell = function () {
+//     console.log("Bye everybody!");
+// };
+
+// console.log(person["eyes"]);
+// person.farewell();
+
+// const person = {
+//     name : {
+//         first: "Bob",
+//         last: "Smith",
+//     },
+//     age: 32,
+//     introduceSelf() {
+//         console.log(`Hi! I'm ${this.name.first}.`);
+//     },
+// };
+
+// const myDataName = "height";
+// const myDataValue = "1.75m";
+// person[myDataName] = myDataValue;
+// console.log(person.height);
+
+// const person1 = {
+//     name : "Chris",
+//     introduceSelf() {
+//         console.log(`Hi! I'm ${this.name}.`);
+//     },
+// };
+
+// const person2 = {
+//     name : "Deepti",
+//     introduceSelf() {
+//         console.log(`Hi! I'm ${this.name}.`);
+//     },
+// };
+
+
+// person1.introduceSelf();
+// person2.introduceSelf();
+
+// function createPerson(name) {
+//     const obj = {};
+//     obj.name = name;
+//     obj.introduceSelf = function() {
+//         console.log(`Hi! I'm ${this.name}.`);
+//     };
+//     return obj;
+// }
+
+// const salva = createPerson("Salva");
+// salva.introduceSelf();
+
+// const frankie = createPerson("Frankie");
+// frankie.introduceSelf();
+
+// function Person(name) {
+//     this.name = name;
+//     this.introduceSelf = function() {
+//         console.log(`Hi! I'm ${this.name}.`);
+//     };
+// }
+
+// const salva = new Person("Salva");
+// salva.introduceSelf();
+
+// const frankie = new Person("Frankie");
+// frankie.introduceSelf();
+
+// const myNotification = new Notification("Hello!");
+
+// Test you skills: Object basics
 
 
 
