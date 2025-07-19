@@ -614,20 +614,103 @@ usersById = {
 // console.log(str);
 
 // Reduce/ reduceRight
+// let arr = [1,2,3,4,5];
+// let result = arr.reduce((sum,current)=> sum + current,0);
+// console.log(result);
+
+// console.log(Array.isArray({}));
+// console.log(Array.isArray([]));
+
+// const ages = [3,10,18,20,25,30,1];
+
+// function checkAge(age) {
+//     return age >18;
+// }
+
+// function myFunction() {
+//     return ages.find(checkAge);
+// }
+
+// console.log(myFunction());
+// console.log(ages);
+
+// Filter()
+// const ages = [32,33,16,40];
+// const result = ages.filter(checkAdult);
+
+// function checkAdult(age) {
+//     return age >= 18;
+// }
+
+// console.log(result);
+// console.log(ages);
+
+// map()
+// const numbers = [4,9,16,25];
+// let result = numbers.map(Math.sqrt);
+// console.log(result);
+// console.log(numbers);
+
+// const numbers = [65,44,12,4];
+// const newArr = numbers.map(myFunction);
+
+// function myFunction(num) {
+//     return num *10;
+// }
+
+// console.log(newArr);
+// console.log(numbers);
+
+// const persons = [
+//     {firstname: "Malcom", lastname: "Reynolds"},
+//     {firstname: "Kaylee", lastname: "Frye"},
+//     {firstname: "Jayne", lastname: "Cobb"},
+// ];
+
+// let result = persons.map(getFullName);
+
+// function getFullName(item) {
+//     return [item.firstname, item.lastname].join(" "); 
+// }
+
+// console.log(result);
+
+
+// let text = "";
+// const fruits = ["apple","orange","cherry"];
+// fruits.forEach(myFunction);
+
+// function myFunction(item, index) {
+//     text += index + ": " + item;
+//     console.log(text);
+//     text = "";
+// }
+
+// let sum = 0;
+// const numbers = [65,44,12,4];
+// numbers.forEach(myFunction);
+
+// function myFunction(item) {
+//     sum += item;
+// }
+
+// console.log(sum);
+
+// const numbers = [65,44,12,4];
+// numbers.forEach(myFunction);
+
+// function myFunction(item,index,arr) {
+//     arr[index] = item *10;
+// }
+
+// console.log(numbers);
 
 
 
 
 
 
-
-
-
-
-
-
-
-
+// console.log();
 
 
 // console.log();
