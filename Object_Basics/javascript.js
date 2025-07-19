@@ -613,7 +613,7 @@ usersById = {
 // let str = arr.join("; ");
 // console.log(str);
 
-// Reduce. reduceRight
+// Reduce/ reduceRight
 
 
 
