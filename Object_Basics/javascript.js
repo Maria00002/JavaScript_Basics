@@ -975,21 +975,21 @@ usersById = {
 
 // console.log(person.height);
 
-function Person(name) {
-    this.name = name;
-    this.introduceSelf = function() {
-        console.log(`Hi! I'm ${this.name}.`);
-    }
-}
+// function Person(name) {
+//     this.name = name;
+//     this.introduceSelf = function() {
+//         console.log(`Hi! I'm ${this.name}.`);
+//     }
+// }
 
-const salva = new Person("Salva");
-salva.introduceSelf();
+// const salva = new Person("Salva");
+// salva.introduceSelf();
 
-const frankie = new Person("Frankie");
-frankie.introduceSelf();
+// const frankie = new Person("Frankie");
+// frankie.introduceSelf();
 
 
-
+// Finish Test your skills: object basics from mdn web docs
 
 
 
