@@ -928,6 +928,65 @@ usersById = {
 // console.log(menu);
 
 
+// JavaScript object basics
+// const person = {
+//     name: ["Bob","Smith"],
+//     age: 32,
+//     bio: function() {
+//         console.log(`${this.name[0]} ${this.name[1]} is ${this.age} years old.`);
+//     },
+//     introduceSelf: function () {
+//         console.log(`Hi! I'm ${this.name[0]}.`);
+//     },
+// };
+
+// const person = {
+//     name: ["Bob","Smith"],
+//     age: 32,
+//     bio() {
+//         console.log(`${this.name[0]} ${this.name[1]} is ${this.age} years old.`);
+//     },
+//     introduceSelf() {
+//         console.log(`Hi! I'm ${this.name[0]}.`);
+//     },
+// };
+
+// person.age = 45;
+// person["name"]["last"] = "Cratchit";
+
+// console.log(person.age);
+// console.log(person["name"]["last"]);
+
+// person["eyes"] = "hazel";
+// person.farewell = function() {
+//     console.log("Bye everybody!");
+// };
+
+// console.log(person["eyes"]);
+// person.farewell();
+
+// const myDataName = nameInput.value;
+// const myDataValue = nameValue.value;
+// person[myDataName] = myDataValue;
+
+// const myDataName = "height";
+// const myDataValue = "1.75m";
+// person[myDataName] = myDataValue;
+
+// console.log(person.height);
+
+function Person(name) {
+    this.name = name;
+    this.introduceSelf = function() {
+        console.log(`Hi! I'm ${this.name}.`);
+    }
+}
+
+const salva = new Person("Salva");
+salva.introduceSelf();
+
+const frankie = new Person("Frankie");
+frankie.introduceSelf();
 
 
 
