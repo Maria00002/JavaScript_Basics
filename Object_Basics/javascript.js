@@ -712,12 +712,231 @@ usersById = {
 //     return total - num;
 // }
 
-const numbers = [15.5,2.3,1.1,4.7];
-console.log(numbers.reduce(getSum,0));
+// const numbers = [15.5,2.3,1.1,4.7];
+// console.log(numbers.reduce(getSum,0));
 
-function getSum(total, num) {
-    return total + Math.round(num);
-}
+// function getSum(total, num) {
+//     return total + Math.round(num);
+// }
+
+// Tasks
+// Translate border-left-width to borderLeftWidth
+
+// camelize("background-color") == 'backgroundColor';
+// camelize("list-style-image") == 'listStyleImage';
+// camelize("-webkit-transition") == 'WebkitTransition';
+
+// function camelize(word) {
+//     let newWord = word.split("-");
+//     for(let i = 1; i < newWord.length; i++) {
+//         newWord[i] = newWord[i][0].toUpperCase() + newWord[i].slice(1);
+//     }
+//     return newWord.join("");
+// }
+
+
+// function camelize(str) {
+//     return str
+//         .split("-")
+//         .map(
+//             (word, index) => index == 0 ? word : word[0].toUpperCase() + word.slice(1)
+//         )
+//         .join("")
+// }
+
+
+// console.log(camelize("background-color"));
+// console.log(camelize("list-style-image"));
+// console.log(camelize("-webkit-transition"));
+
+
+// Filter range
+// function filterRange(arr,a,b) {
+//     return arr.filter((item) => (item >= a && item <= b));
+// }
+
+// let arr = [5,3,8,1];
+// let filtered = filterRange(arr,1,4);
+// console.log(filtered); // 3,1
+// console.log(arr); // 5,3,8,1
+
+// Filter range "in place"
+// let arr = [5,3,8,1];
+// filterRangeInPlace(arr,1,4); // removed the numbers except from 1 to 4
+// console.log(arr); // [3,1]
+
+// function filterRangeInPlace(arr, a, b) {
+//     let result = arr.filter((item) => (item >= a && item <= b));
+//     let oldLength = arr.length;
+//     arr.push(...result);
+//     arr.splice(0, oldLength);
+//     return arr;
+// }
+
+// function filterRangeInPlace(arr, a, b) {
+//    for (let i = 0; i < arr.length; i++) {
+//     let val = arr[i];
+//     if (val < a || val > b) {
+//         arr.splice(i,1);
+//         i--;
+//     }
+//    }
+// }
+
+// Sort in decreasing order
+// let arr = [5,2,1,-10,8];
+
+
+// arr.sort(numericSort);
+// function numericSort(a,b) {
+//     return b-a;
+// }
+
+// console.log(arr); // 8 5 2 1 -10
+
+// Copy and sort array
+// let arr = ["HTML","JavaScript","CSS"];
+// let sorted = copySorted(arr);
+
+// // function copySorted(arr) {
+// //     let newArray = [];
+// //     newArray.push(...arr);
+// //     return newArray.sort();
+// // }
+
+// function copySorted(arr) {
+//     return arr.slice().sort();
+// }
+
+// console.log(sorted); // CSS HTML JavaScript
+// console.log(arr); // HTML JavaScript css
+
+
+// Shuffle an array
+// let arr = [1, 2, 3];
+
+// shuffle(arr);
+// shuffle(arr);
+// shuffle(arr);
+
+
+// function shuffle(arr) {
+//     let newArr = []; 
+//     for (let i = arr.length; i > 0; i--) {
+//         let randomNum = Math.floor(Math.random()*i);
+//         newArr.push(arr[randomNum]);
+//         arr.splice(randomNum,1);
+
+//     }
+//     arr.splice(0,arr.length);
+//     arr.push(...newArr);
+//     console.log(arr);
+// }
+
+// let count = {
+//     '123': 0,
+//     '132': 0,
+//     '213': 0,
+//     '231': 0,
+//     '321': 0,
+//     '312': 0,
+// };
+
+// for (let i = 0; i < 1000000; i++) {
+//     let array = [1,2,3];
+//     shuffle(array);
+//     count[array.join("")]++;
+// }
+
+// for (let key in count) {
+//     console.log(`${key}: ${count[key]}`);
+// }
+
+
+// Filter unique array members
+// function unique(arr) {
+//     let newArr = [];
+//     for (let i = 0; i < arr.length; i++) {
+//         if (!newArr.includes(arr[i])) {
+//             newArr.push(arr[i]);
+//         }
+//     }
+//     return newArr;
+// }
+
+// let strings = ["Hare","Krishna","Hare","Krishna","Krishna",
+//                 "Krishna","Hare","Hare",":-O"];
+
+// console.log(unique(strings)); // Hare Krishna :-O
+
+// Objects from JavaScript.Info
+// Tasks
+// Hello, object
+// let user = {};
+// user.name = "John";
+// user.surname = "Smith";
+// user.name = "Pete";
+// delete user.name;
+
+// Check for emptiness
+// function isEmpty(obj) {
+//     for (let key in obj) {
+//         return false;
+//     }
+//     return true;
+// }
+
+// let schedule = {};
+// console.log(isEmpty(schedule)); //true
+// schedule["8:30"] = "get up";
+// console.log(isEmpty(schedule)); //false
+
+// Sum object properties
+// let salaries = {
+//     John: 100,
+//     Ann: 160,
+//     Pete: 130
+// };
+
+// function sumSalaries(salary) {
+//     let sum = 0;
+//     for (let key in salary) {
+//         sum += salary[key];
+//     }
+//     return sum;
+// }
+
+// console.log(sumSalaries(salaries));
+
+// Multiply numeric property values by 2
+// let menu = {
+//     width: 200,
+//     height: 300,
+//     title: "My menu",
+// };
+
+// multiplyNumeric(menu);
+
+// function multiplyNumeric(menu) {
+//     for (let key in menu) {
+//         if (Number.isInteger(menu[key])) {
+//             menu[key] *= 2;
+//         }
+//     }
+// }
+
+// console.log(menu);
+
+
+
+
+
+
+
+
+
+
+
 
 
 
