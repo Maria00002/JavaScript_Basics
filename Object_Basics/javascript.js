@@ -991,6 +991,82 @@ usersById = {
 
 // Finish Test your skills: object basics from mdn web docs
 
+// Array methods exercises
+// Map to names
+// let john = {name: "John", age: 25};
+// let pete = {name: "Pete", age: 30};
+// let mary = {name: "Mary", age: 28};
+
+// let users = [john, pete, mary];
+// let names = users.map((item) => item.name);
+// console.log(names);
+
+// Map to objects
+// let john = {name: "John", surname: "Smith", id: 1};
+// let pete = {name: "Pete", surname: "Hunt", id: 2};
+// let mary = {name: "Mary", surname: "Key", id: 3};
+
+// let users = [john, pete, mary];
+
+// let usersMapped = users.map (user => ({
+//     fullName: `${user.name} ${user.surname}`,
+//     id: user.id
+// }));
+
+// console.log(usersMapped[0].id);
+// console.log(usersMapped[0].fullName);
+
+// Sort users by age
+// let john = {name: "John", age: 25};
+// let pete = {name: "Pete", age: 30};
+// let mary = {name: "Mary", age: 28};
+
+// let arr = [pete, john, mary];
+
+// sortByAge(arr);
+
+// function sortByAge(arr) {
+//     return arr.sort((a,b) => a.age - b.age);
+// }
+
+
+// console.log(arr[0].name); //John
+// console.log(arr[1].name); //Mary
+// console.log(arr[2].name); //Pete
+
+
+// Get average age
+// let john = {name: "John", age: 25};
+// let pete = {name: "Pete", age: 30};
+// let mary = {name: "Mary", age: 29};
+
+// let arr = [pete, john, mary];
+// console.log(getAverageAge(arr)); //28
+
+// function getAverageAge(users) {
+//     let sum = 0;
+//     for (let key in users) {
+//         sum += users[key]["age"];
+//     }
+//     return (sum/users.length);
+// }
+
+
+// Create keyed obejct from array
+// let users = [
+//     {id:"john", name: "John Smith", age: 20},
+//     {id:"ann", name: "Ann Smith", age: 24},
+//     {id:"Pete", name: "Pete Peterson", age: 31},
+// ];
+
+// let usersById = groupById(users);
+
+// function groupById(array) {
+//     return array.reduce((obj, value) => {
+//         obj[value.id] = value;
+//         return obj;
+//     }, {})
+// }
 
 
 
