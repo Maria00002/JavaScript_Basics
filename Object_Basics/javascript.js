@@ -1070,6 +1070,128 @@ usersById = {
 
 // Finish exercise 12 to 16
 
+// Array.prototype.reduce()
+// const array = [1, 2, 3, 4];
+// const initialValue = 0;
+// const sumWithInitial = array.reduce(
+//   (accumulator,currentValue) => accumulator + currentValue,
+//   initialValue,
+// );
+
+// console.log(sumWithInitial);
+
+// const array = [15,16,17,18,19];
+// function reducer(accumulator, currentValue, index) {
+//   const returns = accumulator + currentValue;
+//   console.log(`accumulator: ${accumulator}, currentValue: ${currentValue},
+//     index: ${index}, returns: ${returns}`,);
+//   return returns;
+// }
+
+// array.reduce(reducer);
+
+// const array = [15,16,17,18,19];
+
+// let result = array.reduce(
+// 	(accumulator, currentValue) => accumulator + currentValue, 10,
+// );
+
+// console.log(result);
+
+// Sum of values in an object array
+// const object = [{x:1},{x:2},{x:3}];
+// const sum = object.reduce(
+// 	(accumulator,currentValue) => accumulator + currentValue.x, 
+// 	0,
+// );
+
+// console.log(sum);
+
+// Function sequential piping
+// const pipe = 
+// 	(...functions) =>
+// 	(initialValue) =>
+// 		functions.reduce((acc,fn) => fn(acc), initialValue);
+
+// // Building blocks to use for composition
+// const double = (x) => 2 * x;
+// const triple = (x) => 3 * x;
+// const quadruple = (x) => 4 * x;
+
+// const multiply6 = pipe(double,triple);
+// const multiply9 = pipe(triple, triple);
+// const multiply16 = pipe(quadruple, quadruple);
+// const multiply24 = pipe(double, triple, quadruple);
+
+// console.log(multiply6(6)); //36
+// console.log(multiply9(9)); //81
+// console.log(multiply16(16)); //256
+// console.log(multiply24(10)); //240
+
+// Running promises in sequence
+// promise sequencng is essentially function piping demonstrated in the 
+// previous section, except done asynchronously
+// const asyncPipe =
+// 	(...functions) =>
+// 	(initialValue) =>
+// 		functions.reduce((acc,fn) => acc.then(fn), Promise.resolve(initialValue));
+
+// // Building blocks to use for composition
+// const p1 = async(a) => a * 5;
+// const p2 = async(a) => a * 2;
+// // The composed functions can also return non-promises, because the values
+// // are all eventually wrapped in promises
+// const f3 = (a) => a * 3;
+// const p4 = async(a) => a * 4;
+
+// asyncPipe(p1,p2,f3,p4)(10).then(console.log); //1200
+
+// // asyncPipe can also be implemented using async/await
+// const asyncPipe = 
+// 	(...functions) =>
+// 	(initialValue) =>
+// 		functions.reduce(async(acc,fn)=> fn(await acc), initialValue);
+
+// Using reduce() with sparse arrays
+// reduce() skips missing elements in sparse arrays, but it does not 
+// skip undefined values
+
+// let result = [1,2,,4].reduce((a,b) => a + b);
+// console.log(result);
+
+// let result2 = [1,2,undefined,4].reduce((a,b) => a + b);
+// console.log(result2);
+
+// Calling reduce() on non-array objects
+// const arrayLike = {
+// 	length: 3,
+// 	0: 2,
+// 	1: 3,
+// 	2: 4,
+// 	3: 99, // ignored by reduce() since length is 3
+// };
+
+// console.log(Array.prototype.reduce.call(arrayLike,(x,y) => x + y));
+
+// const val = array.reduce((acc,cur) => update(acc,cur), initialValue);
+
+// // Is equivalent to:
+// let val = initialValue;
+// for (const cur of array) {
+// 	val = update(val,cur);
+// }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
