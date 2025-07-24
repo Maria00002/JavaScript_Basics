@@ -1068,7 +1068,7 @@ usersById = {
 //     }, {})
 // }
 
-
+// Finish exercise 12 to 16
 
 
 
